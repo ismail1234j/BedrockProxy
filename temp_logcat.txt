@@ -1,0 +1,766 @@
+--------- beginning of main
+04-16 17:03:59.235  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:03:59.353  2840  3426 D ScanFilter: manu data matches
+04-16 17:03:59.353  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-69, periodicAdvInt=0x0
+04-16 17:03:59.356  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-16 17:03:59.361  1670  2042 D InputReader: Btn_touch(8): value=1 when=50763.746494
+04-16 17:03:59.361  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10787 ] when=50763.746494
+04-16 17:03:59.362  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:03:59.362  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+--------- beginning of system
+04-16 17:03:59.362  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=50763746
+04-16 17:03:59.362  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:03:59.363 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:03:59.363  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 21971994 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:03:59.363  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 21971994 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:03:59.370  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 811922598
+04-16 17:03:59.370  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 811922598
+04-16 17:03:59.453  1670  2042 D InputReader: Btn_touch(8): value=0 when=50763.838258
+04-16 17:03:59.453  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50763.838258
+04-16 17:03:59.453  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:03:59.454 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:03:59.455 10551 10551 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-16 17:03:59.455 10551 10551 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-16 17:03:59.455 10551 10551 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-16 17:03:59.457  1670  3511 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:70; bindFromPackage:null: isBindService:false]
+04-16 17:03:59.459 10551 10551 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-16 17:03:59.464 10551 10551 D PhantomService: Service onStartCommand received - Action: null
+04-16 17:03:59.466  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:03:59.469  1670  1670 E NotificationService: Package enqueue rate is 5.1324434. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:03:59.469 10551 10551 I PhantomService: Processing START command.
+04-16 17:03:59.469 10551 10551 D PhantomService: SERVICE LOG: Received start request:
+04-16 17:03:59.469 10551 10551 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-16 17:03:59.471  2428  3215 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:03:59.472  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:03:59.472 10551 10551 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-16 17:03:59.473  1670  2453 E NotificationService: Package enqueue rate is 5.1088443. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:03:59.473 10551 10551 D PhantomService: Notification updated: Proxy running...
+04-16 17:03:59.474 10551 10600 D PhantomRepository: Entering getBinaryFile
+04-16 17:03:59.474 10551 10600 D PhantomRepository: Copying binary to native library directory
+04-16 17:03:59.475 10551 10600 E PhantomRepository: Error copying binary file
+04-16 17:03:59.475 10551 10600 E PhantomRepository: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at libcore.io.Linux.open(Native Method)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:03:59.475 10551 10600 E PhantomRepository: 	... 12 more
+04-16 17:03:59.476 10551 10600 E PhantomService: Failed to get binary file from repository
+04-16 17:03:59.476 10551 10600 E PhantomService: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:03:59.476 10551 10600 E PhantomService: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at libcore.io.Linux.open(Native Method)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:03:59.476 10551 10600 E PhantomService: 	... 12 more
+04-16 17:03:59.476 10551 10600 D PhantomService: SERVICE LOG: Error: Failed to get binary file: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:03:59.476 10551 10600 I PhantomService: Stopping process and service.
+04-16 17:03:59.476 10551 10720 D PhantomService: Stop command issued, but process was not running.
+04-16 17:03:59.478  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:03:59.478  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:03:59.480 10551 10600 D PhantomService: Process coroutine finished.
+04-16 17:03:59.578  1670  2042 D InputReader: Btn_touch(8): value=1 when=50763.963596
+04-16 17:03:59.578  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10788 ] when=50763.963596
+04-16 17:03:59.579  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:03:59.579  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:03:59.579  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:03:59.580 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:03:59.580  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 81202337 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:03:59.580  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 81202337 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:03:59.587  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 645036977
+04-16 17:03:59.587  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 645036977
+04-16 17:03:59.645  1670  2042 D InputReader: Btn_touch(8): value=0 when=50764.030624
+04-16 17:03:59.645  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50764.030624
+04-16 17:03:59.646  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:03:59.647 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:03:59.648 10551 10551 D PhantomViewModel: Sending stop command to service
+04-16 17:03:59.648 10551 10551 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-16 17:03:59.651 10551 10551 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-16 17:03:59.656 10551 10551 D PhantomService: Service onStartCommand received - Action: STOP
+04-16 17:03:59.658  1670  2453 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:71; bindFromPackage:null: isBindService:false]
+04-16 17:03:59.659  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:03:59.660  2428  3215 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:03:59.660  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:03:59.660 10551 10551 I PhantomService: Received STOP action.
+04-16 17:03:59.660 10551 10551 D PhantomService: SERVICE LOG: Received STOP command.
+04-16 17:03:59.661 10551 10551 I PhantomService: Stopping process and service.
+04-16 17:03:59.661 10551 10600 D PhantomService: Stop command issued, but process was not running.
+04-16 17:03:59.661  1670  1670 E NotificationService: Package enqueue rate is 5.3558655. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:03:59.662  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:03:59.662  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:03:59.691   691 11155 I keystore2: system/security/keystore2/src/watchdog.rs:319 - Watchdog thread idle -> terminating. Have a great day.
+04-16 17:03:59.740   675   675 D io_stats: !@   8,0 r 5039488 117365952 w 1889837 25472952 d 556341 29958328 f 0 0 iot 2746052 0 th 0 0 0 pt 0 inp 0 0 50764.125
+04-16 17:03:59.770  1670  2042 D InputReader: Btn_touch(8): value=1 when=50764.155711
+04-16 17:03:59.771  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10789 ] when=50764.155711
+04-16 17:03:59.771  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:03:59.771  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:03:59.771  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:03:59.771 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:03:59.772  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 914245381 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:03:59.772  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 914245381 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:03:59.780  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 591122637
+04-16 17:03:59.780  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 591122637
+04-16 17:03:59.851  2428  2675 E FrameTracker: force finish cuj, time out: J<LOCKSCREEN_UNLOCK_ANIMATION::KeyguardUnlock>
+04-16 17:03:59.887  1670  2042 D InputReader: Btn_touch(8): value=0 when=50764.272666
+04-16 17:03:59.887  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50764.272666
+04-16 17:03:59.888  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:03:59.888 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:03:59.889 10551 10551 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-16 17:03:59.889 10551 10551 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-16 17:03:59.890 10551 10551 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-16 17:03:59.891  1670  3511 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:72; bindFromPackage:null: isBindService:false]
+04-16 17:03:59.893 10551 10551 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-16 17:03:59.897 10551 10551 D PhantomService: Service onStartCommand received - Action: null
+04-16 17:03:59.900  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:03:59.901 10551 10551 I PhantomService: Processing START command.
+04-16 17:03:59.901  2428  3215 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:03:59.901 10551 10551 D PhantomService: SERVICE LOG: Received start request:
+04-16 17:03:59.901  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:03:59.902 10551 10551 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-16 17:03:59.902  1670  1670 E NotificationService: Package enqueue rate is 5.320028. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:03:59.902 10551 10720 D PhantomRepository: Entering getBinaryFile
+04-16 17:03:59.903 10551 10720 D PhantomRepository: Copying binary to native library directory
+04-16 17:03:59.904 10551 10720 E PhantomRepository: Error copying binary file
+04-16 17:03:59.904 10551 10720 E PhantomRepository: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at libcore.io.Linux.open(Native Method)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:03:59.904 10551 10720 E PhantomRepository: 	... 12 more
+04-16 17:03:59.904 10551 10720 E PhantomService: Failed to get binary file from repository
+04-16 17:03:59.904 10551 10720 E PhantomService: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:03:59.904 10551 10720 E PhantomService: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at libcore.io.Linux.open(Native Method)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:03:59.904 10551 10720 E PhantomService: 	... 12 more
+04-16 17:03:59.904 10551 10720 D PhantomService: SERVICE LOG: Error: Failed to get binary file: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:03:59.904 10551 10720 I PhantomService: Stopping process and service.
+04-16 17:03:59.905 10551 10653 D PhantomService: Stop command issued, but process was not running.
+04-16 17:03:59.905 10551 10551 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-16 17:03:59.906  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:03:59.906  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:03:59.907  1670  2453 E NotificationService: Package enqueue rate is 5.2974815. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:03:59.908 10551 10551 D PhantomService: Notification updated: Proxy running...
+04-16 17:03:59.910 10551 10720 D PhantomService: Process coroutine finished.
+04-16 17:04:00.002  2428  3072 I DateTimeView: updateAll - getTimeFormat
+04-16 17:04:00.003  2428  2428 D FaceWidgetPagesController: onTimeChanged()
+04-16 17:04:00.003  2428  3072 D QSClockBellTower: onReceive(android.intent.action.TIME_TICK) mTimeZoneString:Europe/London
+04-16 17:04:00.003  1670  1670 I EyeComfortSolutionService: action  :  android.intent.action.TIME_TICK
+04-16 17:04:00.004  1670  2042 D InputReader: Btn_touch(8): value=1 when=50764.389626
+04-16 17:04:00.004  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10790 ] when=50764.389626
+04-16 17:04:00.005  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:00.005  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.005 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:00.005  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 842356164 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.005  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 842356164 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.007  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:00.008  2428  2428 D QSClockBellTower: He is ready to ring the bell. (((QSClockBellSound - TimeText:17:04, TimeContentDescription:17:04, DateText:Wed, 16 April, ShortDateText:Wed, 16 Apr, Demo:false, QuickStar-Second(false|12:34:56), QuickStar-DateText:Wed, 16 Apr)))
+04-16 17:04:00.008  2428  2428 D QSClock : StatusBar clock=17:04 notifyTimeChanged(QSClockBellSound - TimeText:17:04, TimeContentDescription:17:04, DateText:Wed, 16 April, ShortDateText:Wed, 16 Apr, Demo:false, QuickStar-Second(false|12:34:56), QuickStar-DateText:Wed, 16 Apr) clockVisibleByPolicy=true, clockVisibleByUser=true, visible=true, parent=android.widget.LinearLayout{87b7e9e V.E...... ......ID 0,0-97,60 #7f0a0591 app:id/left_clock_container}
+04-16 17:04:00.008  2428  2428 D QSClockBellTower: Everyone heard the bell. run(currentTime:1744819440007, getTime():Wed Apr 16 17:04:00 GMT+01:00 2025, getTimeZone():libcore.util.ZoneInfo[mDstSavings=3600000,mUseDst=true,mDelegate=[id="Europe/London",mRawOffset=0,mEarliestRawOffset=-75000,transitions=366]])
+04-16 17:04:00.013  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 391051814
+04-16 17:04:00.013  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 391051814
+04-16 17:04:00.022  2428  2428 D QsExpandAnimator: mIsDateButtonOverlapped = false >> false, (348.0 + 375) = 723.0 : 984
+04-16 17:04:00.025  2428  2428 W View    : requestLayout() improperly called by android.widget.FrameLayout{295a6ba V.E...... ......ID 0,142-1080,2265 #7f0a0846 app:id/qs_frame} during layout: running second layout pass
+04-16 17:04:00.071  1670  2042 D InputReader: Btn_touch(8): value=0 when=50764.456625
+04-16 17:04:00.071  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50764.456625
+04-16 17:04:00.072  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.073 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:00.074 10551 10551 D PhantomViewModel: Sending stop command to service
+04-16 17:04:00.074 10551 10551 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-16 17:04:00.077 10551 10551 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-16 17:04:00.081 10551 10551 D PhantomService: Service onStartCommand received - Action: STOP
+04-16 17:04:00.083  1670  3511 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:73; bindFromPackage:null: isBindService:false]
+04-16 17:04:00.084  2428 23627 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.085 10551 10551 I PhantomService: Received STOP action.
+04-16 17:04:00.085 10551 10551 D PhantomService: SERVICE LOG: Received STOP command.
+04-16 17:04:00.086 10551 10551 I PhantomService: Stopping process and service.
+04-16 17:04:00.086  1670  1670 E NotificationService: Package enqueue rate is 5.5631227. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:04:00.086 10551 10600 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:00.088  2428 23627 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:00.088  2428 23627 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:00.088  2428 23627 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.088  2428 23627 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:00.146  1670  2042 D InputReader: Btn_touch(8): value=1 when=50764.531626
+04-16 17:04:00.146  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10791 ] when=50764.531626
+04-16 17:04:00.147  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:00.147  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.147  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:00.147 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:00.147  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 639219800 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.147  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 639219800 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.155  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 530465193
+04-16 17:04:00.155  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 530465193
+04-16 17:04:00.173  2428  2428 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+04-16 17:04:00.230  1670  2042 D InputReader: Btn_touch(8): value=0 when=50764.615533
+04-16 17:04:00.230  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50764.615533
+04-16 17:04:00.231  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.232 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:00.232 10551 10551 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-16 17:04:00.233 10551 10551 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-16 17:04:00.233 10551 10551 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-16 17:04:00.234  1670  3511 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:74; bindFromPackage:null: isBindService:false]
+04-16 17:04:00.235 10551 10551 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-16 17:04:00.239 10551 10551 D PhantomService: Service onStartCommand received - Action: null
+04-16 17:04:00.241  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.242 10551 10551 I PhantomService: Processing START command.
+04-16 17:04:00.242 10551 10551 D PhantomService: SERVICE LOG: Received start request:
+04-16 17:04:00.243 10551 10551 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-16 17:04:00.243  1670  1670 E NotificationService: Package enqueue rate is 5.9191165. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:04:00.243 10551 11218 D PhantomRepository: Entering getBinaryFile
+04-16 17:04:00.243 10551 11218 D PhantomRepository: Copying binary to native library directory
+04-16 17:04:00.244  2428  3215 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:00.244 10551 11218 E PhantomRepository: Error copying binary file
+04-16 17:04:00.244 10551 11218 E PhantomRepository: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:00.244 10551 11218 E PhantomRepository: 	... 12 more
+04-16 17:04:00.244  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:00.245 10551 11218 E PhantomService: Failed to get binary file from repository
+04-16 17:04:00.245 10551 11218 E PhantomService: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:00.245 10551 11218 E PhantomService: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:00.245 10551 11218 E PhantomService: 	... 12 more
+04-16 17:04:00.245 10551 11218 D PhantomService: SERVICE LOG: Error: Failed to get binary file: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:00.245 10551 11218 I PhantomService: Stopping process and service.
+04-16 17:04:00.245 10551 10720 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:00.246  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.247  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:00.247 10551 10551 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-16 17:04:00.248  1670  3511 E NotificationService: Package enqueue rate is 5.8808265. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:04:00.249 10551 11218 D PhantomService: Process coroutine finished.
+04-16 17:04:00.249 10551 10551 D PhantomService: Notification updated: Proxy running...
+04-16 17:04:00.372  1670  2042 D InputReader: Btn_touch(8): value=1 when=50764.757501
+04-16 17:04:00.372  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10792 ] when=50764.757501
+04-16 17:04:00.373  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:00.373  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.373  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=50764757
+04-16 17:04:00.373  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:00.374 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:00.374  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 914183281 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.374  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 914183281 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.389  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1064614237
+04-16 17:04:00.389  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1064614237
+04-16 17:04:00.422  1670  2042 D InputReader: Btn_touch(8): value=0 when=50764.807294
+04-16 17:04:00.422  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50764.807294
+04-16 17:04:00.422  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.423 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:00.424 10551 10551 D PhantomViewModel: Sending stop command to service
+04-16 17:04:00.424 10551 10551 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-16 17:04:00.426 10551 10551 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-16 17:04:00.431 10551 10551 D PhantomService: Service onStartCommand received - Action: STOP
+04-16 17:04:00.433  1670  3511 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:75; bindFromPackage:null: isBindService:false]
+04-16 17:04:00.434  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.435  2428  3215 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:00.435 10551 10551 I PhantomService: Received STOP action.
+04-16 17:04:00.435 10551 10551 D PhantomService: SERVICE LOG: Received STOP command.
+04-16 17:04:00.435  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:00.436 10551 10551 I PhantomService: Stopping process and service.
+04-16 17:04:00.436 10551 11218 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:00.436  1670  1670 E NotificationService: Package enqueue rate is 6.018466. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:04:00.438  2428  3184 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.438  2428  3184 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:00.660 11133 11166 I [SPOS]i : RxComputationThreadPool-1 | no activity, exiting process
+04-16 17:04:00.668 11133 11166 I sungpositioning: System.exit called, status: 0
+04-16 17:04:00.668 11133 11166 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+04-16 17:04:00.674  1670  1771 I GestureDetector: handleMessage TAP
+04-16 17:04:00.674  1670  1670 I GestureDetector: handleMessage TAP
+04-16 17:04:00.714  1670  3511 I ActivityManager: Process com.samsung.android.samsungpositioning (pid 11133) has died: prev LAST(143,2174)
+04-16 17:04:00.715  1670  1786 I libprocessgroup: Successfully killed process cgroup uid 5017 pid 11133 in 0ms
+04-16 17:04:00.715  1235  1235 I Zygote  : Process 11133 exited cleanly (0)
+04-16 17:04:00.717  1670  1771 D DisplayManagerService: Drop pending events for gone uid 5017
+04-16 17:04:00.756  1670  4087 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 7692, isSameBssidAndFreq true
+04-16 17:04:00.758  2428  2428 D StatusBarIconController: ignoring old pipeline callback because the new wifi icon is enabled
+04-16 17:04:00.758  2428  2633 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 17:04:00.849  1670  2042 D InputReader: Btn_touch(8): value=1 when=50765.233934
+04-16 17:04:00.849  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10793 ] when=50765.233934
+04-16 17:04:00.850  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:00.850  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.851 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:00.851  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 913005077 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.851  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 913005077 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:00.852  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:00.858  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 190654300
+04-16 17:04:00.858  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 190654300
+04-16 17:04:00.923  1670  2042 D InputReader: Btn_touch(8): value=0 when=50765.308641
+04-16 17:04:00.923  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50765.308641
+04-16 17:04:00.924  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:00.924 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:00.926 10551 10551 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-16 17:04:00.926 10551 10551 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-16 17:04:00.926 10551 10551 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-16 17:04:00.927  1670  3511 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:76; bindFromPackage:null: isBindService:false]
+04-16 17:04:00.929 10551 10551 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-16 17:04:00.934 10551 10551 D PhantomService: Service onStartCommand received - Action: null
+04-16 17:04:00.937  2428  3184 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.938 10551 10551 I PhantomService: Processing START command.
+04-16 17:04:00.938 10551 10551 D PhantomService: SERVICE LOG: Received start request:
+04-16 17:04:00.939 10551 10551 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-16 17:04:00.939 10551 10653 D PhantomRepository: Entering getBinaryFile
+04-16 17:04:00.940 10551 10653 D PhantomRepository: Copying binary to native library directory
+04-16 17:04:00.940 10551 10653 E PhantomRepository: Error copying binary file
+04-16 17:04:00.940 10551 10653 E PhantomRepository: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:00.940 10551 10653 E PhantomRepository: 	... 12 more
+04-16 17:04:00.941 10551 10653 E PhantomService: Failed to get binary file from repository
+04-16 17:04:00.941 10551 10653 E PhantomService: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:00.941 10551 10653 E PhantomService: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:00.941 10551 10653 E PhantomService: 	... 12 more
+04-16 17:04:00.941 10551 10653 D PhantomService: SERVICE LOG: Error: Failed to get binary file: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:00.941 10551 10551 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-16 17:04:00.944  1670  1670 E NotificationService: Package enqueue rate is 5.8310604. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:04:00.944 10551 10653 I PhantomService: Stopping process and service.
+04-16 17:04:00.944 10551 10551 D PhantomService: Notification updated: Proxy running...
+04-16 17:04:00.947 10551 10649 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:00.948 10551 10653 D PhantomService: Process coroutine finished.
+04-16 17:04:00.949  2428  3184 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:00.950  2428  3184 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:00.950  2428  3184 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:00.950  2428  3184 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:00.962  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10379, reason = 8
+04-16 17:04:00.962  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
+04-16 17:04:01.055  2840  3426 D ScanFilter: manu data matches
+04-16 17:04:01.055  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-66, periodicAdvInt=0x0
+04-16 17:04:01.058  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-16 17:04:01.143  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
+04-16 17:04:01.144  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10379
+04-16 17:04:01.151  1670  1670 I GestureDetector: handleMessage TAP
+04-16 17:04:01.152  1670  1771 I GestureDetector: handleMessage TAP
+04-16 17:04:01.214  2840  3426 D ScanFilter: manu data matches
+04-16 17:04:01.214  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-66, periodicAdvInt=0x0
+04-16 17:04:01.217  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-16 17:04:01.358  1670  2042 D InputReader: Btn_touch(8): value=1 when=50765.743180
+04-16 17:04:01.358  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10794 ] when=50765.743180
+04-16 17:04:01.360  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:01.360  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:01.360  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:01.361 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:01.361  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 184680518 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:01.361  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 184680518 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:01.376  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 620534886
+04-16 17:04:01.376  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 620534886
+04-16 17:04:01.424  1670  2042 D InputReader: Btn_touch(8): value=0 when=50765.809819
+04-16 17:04:01.424  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50765.809819
+04-16 17:04:01.425  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:01.426 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:01.427 10551 10551 D PhantomViewModel: Sending stop command to service
+04-16 17:04:01.427 10551 10551 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-16 17:04:01.429 10551 10551 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-16 17:04:01.434 10551 10551 D PhantomService: Service onStartCommand received - Action: STOP
+04-16 17:04:01.436  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:77; bindFromPackage:null: isBindService:false]
+04-16 17:04:01.437  2428  3184 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:01.438 10551 10551 I PhantomService: Received STOP action.
+04-16 17:04:01.438 10551 10551 D PhantomService: SERVICE LOG: Received STOP command.
+04-16 17:04:01.439 10551 10551 I PhantomService: Stopping process and service.
+04-16 17:04:01.439 10551 10649 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:01.440  2428  3184 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:01.440  2428  3184 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:01.441  2428  3184 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:01.442  2428  3184 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:01.460  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10379, reason = 8
+04-16 17:04:01.460  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
+04-16 17:04:01.641  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
+04-16 17:04:01.641  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10379
+04-16 17:04:01.661  1670  1771 I GestureDetector: handleMessage TAP
+04-16 17:04:01.662  1670  1670 I GestureDetector: handleMessage TAP
+04-16 17:04:01.742   675   675 D io_stats: !@   8,0 r 5039501 117366280 w 1889860 25473056 d 556341 29958328 f 0 0 iot 2746100 0 th 0 0 0 pt 0 inp 0 0 50766.127
+04-16 17:04:01.743   675   675 D io_stats: !@ Read_top(KB): .gms.persistent(2984) 296 .android.chrome(6563) 28 system_server(1670) 8
+04-16 17:04:01.743   675   675 D io_stats: !@ Write_top(KB): system_server(1670) 432 .android.chrome(6563) 368 kworker/u16:16(20696) 44
+04-16 17:04:01.776  1670  2042 D InputReader: Btn_touch(8): value=1 when=50766.160867
+04-16 17:04:01.776  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10795 ] when=50766.160867
+04-16 17:04:01.777  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:01.777  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:01.777 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:01.778  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=50766160
+04-16 17:04:01.778  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 459533916 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:01.779  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 459533916 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:01.783  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:01.793  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 345336335
+04-16 17:04:01.793  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 345336335
+04-16 17:04:01.821  2984 21222 I FusedLocation: (REDACTED) stationary throttling engaged @%s
+04-16 17:04:01.829  2984  5040 I FusedLocation: (REDACTED) stationary throttling engaged @%s
+04-16 17:04:01.859  1670  2042 D InputReader: Btn_touch(8): value=0 when=50766.244271
+04-16 17:04:01.859  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50766.244271
+04-16 17:04:01.859  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:01.859 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:01.860 10551 10551 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-16 17:04:01.860 10551 10551 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-16 17:04:01.860 10551 10551 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-16 17:04:01.861  1670  3511 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:78; bindFromPackage:null: isBindService:false]
+04-16 17:04:01.862 10551 10551 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-16 17:04:01.866 10551 10551 D PhantomService: Service onStartCommand received - Action: null
+04-16 17:04:01.869  2428  3184 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:01.871 10551 10551 I PhantomService: Processing START command.
+04-16 17:04:01.871 10551 10551 D PhantomService: SERVICE LOG: Received start request:
+04-16 17:04:01.871 10551 10551 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-16 17:04:01.872 10551 10649 D PhantomRepository: Entering getBinaryFile
+04-16 17:04:01.873 10551 10551 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-16 17:04:01.873 10551 10649 D PhantomRepository: Copying binary to native library directory
+04-16 17:04:01.874  1670  1670 E NotificationService: Package enqueue rate is 5.142699. Shedding 0|com.ismailjamal.bedrockrelay|1|null|10379. package=com.ismailjamal.bedrockrelay
+04-16 17:04:01.874  2428  3184 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:01.874 10551 10551 D PhantomService: Notification updated: Proxy running...
+04-16 17:04:01.874  2428  3184 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:01.876 10551 10649 E PhantomRepository: Error copying binary file
+04-16 17:04:01.876 10551 10649 E PhantomRepository: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:01.876 10551 10649 E PhantomRepository: 	... 12 more
+04-16 17:04:01.878 10551 10649 E PhantomService: Failed to get binary file from repository
+04-16 17:04:01.878 10551 10649 E PhantomService: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:01.878 10551 10649 E PhantomService: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:01.878 10551 10649 E PhantomService: 	... 12 more
+04-16 17:04:01.878 10551 10649 D PhantomService: SERVICE LOG: Error: Failed to get binary file: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:01.879 10551 10649 I PhantomService: Stopping process and service.
+04-16 17:04:01.880 10551 10601 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:01.881  2428  3184 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:01.881  2428  3184 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:01.882 10551 10649 D PhantomService: Process coroutine finished.
+04-16 17:04:01.898  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10379, reason = 8
+04-16 17:04:01.898  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
+04-16 17:04:02.071  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
+04-16 17:04:02.072  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10379
+04-16 17:04:02.078  1670  1670 I GestureDetector: handleMessage TAP
+04-16 17:04:02.079  1670  1771 I GestureDetector: handleMessage TAP
+04-16 17:04:02.182  1670  1692 I system_server: Background concurrent copying GC freed 11MB AllocSpace bytes, 665(13MB) LOS objects, 18% free, 107MB/131MB, paused 153us,277us total 201.476ms
+04-16 17:04:02.186  1670  1694 W System  : A resource failed to call close. 
+04-16 17:04:02.201  1670  2042 D InputReader: Btn_touch(8): value=1 when=50766.586880
+04-16 17:04:02.202  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10796 ] when=50766.586880
+04-16 17:04:02.202  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:02.202  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:02.202  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:02.202 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:02.203  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 68548131 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:02.203  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 68548131 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:02.228  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 550320286
+04-16 17:04:02.228  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 550320286
+04-16 17:04:02.293  1670  2042 D InputReader: Btn_touch(8): value=0 when=50766.678650
+04-16 17:04:02.293  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50766.678650
+04-16 17:04:02.294  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:02.294 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:02.295 10551 10551 D PhantomViewModel: Sending stop command to service
+04-16 17:04:02.295 10551 10551 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-16 17:04:02.297 10551 10551 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-16 17:04:02.301 10551 10551 D PhantomService: Service onStartCommand received - Action: STOP
+04-16 17:04:02.303  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:79; bindFromPackage:null: isBindService:false]
+04-16 17:04:02.303  2428  2437 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:02.305 10551 10551 I PhantomService: Received STOP action.
+04-16 17:04:02.305 10551 10551 D PhantomService: SERVICE LOG: Received STOP command.
+04-16 17:04:02.305 10551 10551 I PhantomService: Stopping process and service.
+04-16 17:04:02.305  2428  2437 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:02.305  2428  2437 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:02.305 10551 10653 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:02.306  2428  2437 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:02.307  2428  2437 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:02.330  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10379, reason = 8
+04-16 17:04:02.330  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
+04-16 17:04:02.503  1670  1670 I GestureDetector: handleMessage TAP
+04-16 17:04:02.504  1670  1771 I GestureDetector: handleMessage TAP
+04-16 17:04:02.508  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
+04-16 17:04:02.508  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10379
+04-16 17:04:02.628  1670  2042 D InputReader: Btn_touch(8): value=1 when=50767.013209
+04-16 17:04:02.628  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10797 ] when=50767.013209
+04-16 17:04:02.629  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:02.630  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:02.630 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:02.631  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:02.632  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 901304388 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:02.632  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 901304388 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:02.654  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 187757838
+04-16 17:04:02.654  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 187757838
+04-16 17:04:02.728  1670  2042 D InputReader: Btn_touch(8): value=0 when=50767.113376
+04-16 17:04:02.728  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50767.113376
+04-16 17:04:02.728  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:02.729 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:02.730 10551 10551 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-16 17:04:02.730 10551 10551 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-16 17:04:02.731 10551 10551 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-16 17:04:02.732  1670  4820 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:80; bindFromPackage:null: isBindService:false]
+04-16 17:04:02.733 10551 10551 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-16 17:04:02.737 10551 10551 D PhantomService: Service onStartCommand received - Action: null
+04-16 17:04:02.739  2428  2437 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:02.740  2428  2437 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:02.740  2428  2437 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:02.740 10551 10551 I PhantomService: Processing START command.
+04-16 17:04:02.740 10551 10551 D PhantomService: SERVICE LOG: Received start request:
+04-16 17:04:02.741 10551 10551 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-16 17:04:02.741 10551 10649 D PhantomRepository: Entering getBinaryFile
+04-16 17:04:02.742 10551 10649 D PhantomRepository: Copying binary to native library directory
+04-16 17:04:02.744 10551 10649 E PhantomRepository: Error copying binary file
+04-16 17:04:02.744 10551 10649 E PhantomRepository: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:02.744 10551 10649 E PhantomRepository: 	... 12 more
+04-16 17:04:02.744 10551 10551 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-16 17:04:02.747 10551 10649 E PhantomService: Failed to get binary file from repository
+04-16 17:04:02.747 10551 10649 E PhantomService: java.io.FileNotFoundException: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:208)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:73)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-16 17:04:02.747 10551 10649 E PhantomService: Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at libcore.io.Linux.open(Native Method)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8782)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+04-16 17:04:02.747 10551 10649 E PhantomService: 	... 12 more
+04-16 17:04:02.747 10551 10649 D PhantomService: SERVICE LOG: Error: Failed to get binary file: /data/app/~~ETLCI8rzuiASzPd2nPdOYA==/com.ismailjamal.bedrockrelay-gMfXCgOVJmsFxQ7UFrnPkA==/lib/arm64/phantom: open failed: EACCES (Permission denied)
+04-16 17:04:02.747 10551 10551 D PhantomService: Notification updated: Proxy running...
+04-16 17:04:02.747 10551 10649 I PhantomService: Stopping process and service.
+04-16 17:04:02.748  2428  2437 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:02.748 10551 10653 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:02.748  2428  2437 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:02.750 10551 10649 D PhantomService: Process coroutine finished.
+04-16 17:04:02.764  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10379, reason = 8
+04-16 17:04:02.764  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
+04-16 17:04:02.913  1670  2349 D WifiConnectivityMonitor: Stop WCM Poll. cnt : 5
+04-16 17:04:02.913  1670  2349 I WifiConnectivityMonitor: LinkQualityMonitorCallback was not registered yet
+04-16 17:04:02.916  2840  3426 D ScanFilter: manu data matches
+04-16 17:04:02.916  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-64, periodicAdvInt=0x0
+04-16 17:04:02.919  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-16 17:04:02.932  1670  1670 I GestureDetector: handleMessage TAP
+04-16 17:04:02.932  1670  1771 I GestureDetector: handleMessage TAP
+04-16 17:04:02.943  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
+04-16 17:04:02.943  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10379
+04-16 17:04:02.948  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
+04-16 17:04:02.948  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10379
+04-16 17:04:03.054  1670  2042 D InputReader: Btn_touch(8): value=1 when=50767.439164
+04-16 17:04:03.054  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.10798 ] when=50767.439164
+04-16 17:04:03.055  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-16 17:04:03.055  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x0, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:03.055  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=50767439
+04-16 17:04:03.055  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-16 17:04:03.055 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-16 17:04:03.056  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 391327147 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:03.056  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 391327147 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-16 17:04:03.063  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 629474640
+04-16 17:04:03.063  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 629474640
+04-16 17:04:03.075  2840  3426 D ScanFilter: manu data matches
+04-16 17:04:03.075  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-64, periodicAdvInt=0x0
+04-16 17:04:03.078  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-16 17:04:03.121  1670  2042 D InputReader: Btn_touch(8): value=0 when=50767.506162
+04-16 17:04:03.121  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=50767.506162
+04-16 17:04:03.121  1670  2041 I InputDispatcher: Delivering touch to (10551): action: 0x1, f=0x0, d=0, '7c67f7a', t=1 
+04-16 17:04:03.122 10551 10551 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-16 17:04:03.123 10551 10551 D PhantomViewModel: Sending stop command to service
+04-16 17:04:03.123 10551 10551 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-16 17:04:03.125 10551 10551 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-16 17:04:03.129 10551 10551 D PhantomService: Service onStartCommand received - Action: STOP
+04-16 17:04:03.130  1670  4820 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10379; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:81; bindFromPackage:null: isBindService:false]
+04-16 17:04:03.131  2428  2437 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:03.132  2428  2437 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-16 17:04:03.132  2428  2437 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-16 17:04:03.132 10551 10551 I PhantomService: Received STOP action.
+04-16 17:04:03.132 10551 10551 D PhantomService: SERVICE LOG: Received STOP command.
+04-16 17:04:03.133 10551 10551 I PhantomService: Stopping process and service.
+04-16 17:04:03.134 10551 10600 D PhantomService: Stop command issued, but process was not running.
+04-16 17:04:03.134  2428  2437 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@7503abb]:[userId:0]
+04-16 17:04:03.134  2428  2437 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-16 17:04:03.158  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10379, reason = 8
+04-16 17:04:03.158  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
+04-16 17:04:03.336  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
+04-16 17:04:03.336  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10379
+04-16 17:04:03.356  1670  1771 I GestureDetector: handleMessage TAP
+04-16 17:04:03.356  1670  1670 I GestureDetector: handleMessage TAP
+04-16 17:04:03.451  2984  2984 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.aang.events.services.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
