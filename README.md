@@ -27,7 +27,7 @@ It's easiest to use the latest release but incase I haven't made one and there i
     
 3.  Then from the root directory of this project go to `app/src/main/jniLibs` folder (the jniLibs folder may or may not be there so you might have to create it).
 
-4. Now you create two folder, `arm64-v8a` and `armeabi-v8a`.
+4. Now you create two folder, `arm64-v8a` and `armeabi-v7a`.
     
 5. The `phantom-linux-arm8` file from earlier needs to go into `arm64-v8a` and the `phantom-linux-arm7` file needs to go into `armeabi-v8a`. 
     
