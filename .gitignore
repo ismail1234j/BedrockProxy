@@ -13,4 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/src/main/jniLibs
+/app/src/main/jniLibs/

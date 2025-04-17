@@ -13,6 +13,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -21,6 +22,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
@@ -53,7 +55,10 @@ class MainActivity : ComponentActivity() {
         Log.d(TAG, "Activity onCreate")
 
         setContent {
-            MaterialTheme {
+            val isDark = isSystemInDarkTheme()
+            MaterialTheme(
+                colorScheme = if (isDark) darkColorScheme() else lightColorScheme()
+            ) {
                 SimplifiedPhantomApp(viewModel)
             }
         }
@@ -113,7 +118,7 @@ fun SimplifiedPhantomApp(
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Bedrock Relay (Bundled)", style = MaterialTheme.typography.headlineSmall)
+        Text("Bedrock Proxy", style = MaterialTheme.typography.headlineSmall)
         Spacer(modifier = Modifier.height(16.dp))
 
         OutlinedTextField(
@@ -136,7 +141,8 @@ fun SimplifiedPhantomApp(
                 }
             },
             enabled = !serviceRunning || phantomArguments.isNotBlank(),
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF4CAF50)) // Added green color
         ) {
             Text(if (serviceRunning) "Stop Service" else "Start Service")
         }
@@ -174,5 +180,11 @@ fun SimplifiedPhantomApp(
                 }
             }
         }
+        Spacer(modifier = Modifier.height(8.dp)) // Added spacer
+        Text( // Added credits placeholder
+            text = "https://github.com/ismail1234j/bedrockproxy",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
     }
 }

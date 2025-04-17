@@ -8,8 +8,9 @@ An Android application that serves as a wrapper for `jhead/phantom`. It allows y
 *   Runs phantom as a foreground service to ensure it keeps running in the background.
 *   Displays logs from the running phantom process within the app.
 *   Handles necessary permissions and manages the phantom binary lifecycle.
+*   Auto Dark/light Theme
 
-## Usage
+## How-To
 
 1.  Download the latest build from [here](https://github.com/ismail1234j/bedrockproxyv2/releases)  or you can build yourself by following [this](#building).
 
@@ -17,6 +18,9 @@ An Android application that serves as a wrapper for `jhead/phantom`. It allows y
 
 3. Now you can use the Phantom app as you would on a desktop computer. Here is an example command to enter into the app: `-server lax.mcbr.cubed.host:19132`. If you need help with the arguments to enter see the [Phantom Repository here.](https://github.com/jhead/phantom?tab=readme-ov-file#usage)
 
+## Contributions
+
+All and any contributions are welcome, just open a pr and I'll have a look.
 ## Building
 
 It's easiest to use the latest release but incase I haven't made one and there is a game breaking change follow this guide:
