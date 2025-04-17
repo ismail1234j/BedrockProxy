@@ -60,34 +60,74 @@ class PhantomRepository private constructor(private val context: Context) {
     fun getBinaryFile(): Result<File> {
         Log.d(TAG, "Entering getBinaryFile")
 
-        // Search for libphantom.so in all possible ABI directories under native library root
+        // Get the standard native library directory for this application.
+        // Android automatically places the correct ABI version here upon installation.
         val nativeLibDir = File(context.applicationInfo.nativeLibraryDir)
-        val baseLibDir = nativeLibDir.parentFile ?: nativeLibDir
-        val abiList = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) Build.SUPPORTED_ABIS.toList() else listOf(Build.CPU_ABI)
+        val soFile = File(nativeLibDir, "libphantom.so")
 
-        val candidates = mutableListOf<File>().apply {
-            add(File(nativeLibDir, "libphantom.so"))
-            abiList.forEach { abi -> add(File(baseLibDir, "$abi/libphantom.so")) }
-        }
+        Log.d(TAG, "Checking for binary at: ${soFile.absolutePath}")
 
-        val soFile = candidates.firstOrNull { it.exists() } ?: return Result.failure(
-            RuntimeException("Binary libphantom.so not found in any: ${candidates.map { it.absolutePath }}")
-        )
+        if (!soFile.exists()) {
+            Log.e(TAG, "Binary ${soFile.name} not found at expected location: ${soFile.absolutePath}")
 
-        if (!soFile.canExecute()) {
-            Log.w(TAG, "libphantom.so not executable, chmod 755")
+            // --- Start Enhanced Logging ---
+            Log.d(TAG, "--- Directory Tree Dump ---")
+            Log.d(TAG, "Attempting to log native library directory structure:")
             try {
-                Runtime.getRuntime().exec(arrayOf("chmod", "755", soFile.absolutePath)).waitFor()
+                logDirectoryTree(nativeLibDir, TAG, "nativeLibDir: ")
+
+                // Also log the parent directory to see sibling ABI folders
+                val baseLibDir = nativeLibDir.parentFile
+                if (baseLibDir != null && baseLibDir.exists() && baseLibDir.isDirectory) {
+                     Log.d(TAG, "Parent directory structure:")
+                     logDirectoryTree(baseLibDir, TAG, "baseLibDir: ")
+                } else {
+                    Log.w(TAG, "Could not access or find parent directory of nativeLibDir: ${baseLibDir?.absolutePath}")
+                }
+
+                // Optionally log the main data directory (can be verbose)
+                // val dataDir = File(context.applicationInfo.dataDir)
+                // Log.d(TAG, "Application data directory structure:")
+                // logDirectoryTree(dataDir, TAG, "dataDir: ")
+
             } catch (e: Exception) {
-                Log.e(TAG, "Failed to chmod libphantom.so", e)
+                 Log.e(TAG, "Error occurred while trying to log directory structure", e)
             }
-            if (!soFile.canExecute()) return Result.failure(
-                RuntimeException("Failed to set executable permission on ${soFile.absolutePath}")
+            Log.d(TAG, "--- End Directory Tree Dump ---")
+            // --- End Enhanced Logging ---
+
+            return Result.failure(
+                RuntimeException("Binary ${soFile.name} not found at ${soFile.absolutePath}")
             )
         }
 
+        // Check and set executable permissions if needed
+        if (!soFile.canExecute()) {
+            Log.w(TAG, "${soFile.name} not executable, attempting chmod 755")
+            try {
+                // Use array form for exec to handle paths with spaces, though less likely here
+                val process = Runtime.getRuntime().exec(arrayOf("chmod", "755", soFile.absolutePath))
+                val exitCode = process.waitFor()
+                Log.i(TAG, "chmod 755 executed for ${soFile.absolutePath} with exit code $exitCode")
+                // Re-check execute permission after chmod
+                // Need to create a new File object to potentially get updated state
+                val updatedSoFile = File(soFile.absolutePath)
+                if (!updatedSoFile.canExecute()) {
+                     Log.e(TAG, "Failed to make ${updatedSoFile.absolutePath} executable even after chmod.")
+                     return Result.failure(
+                         RuntimeException("Failed to set executable permission on ${updatedSoFile.absolutePath}")
+                     )
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to chmod ${soFile.name}", e)
+                 return Result.failure(
+                     RuntimeException("Failed to set executable permission on ${soFile.absolutePath} due to: ${e.message}")
+                 )
+            }
+        }
+
         Log.i(TAG, "Binary file is ready to execute: ${soFile.absolutePath}")
-        return Result.success(soFile)
+        return Result.success(soFile) // Return the original File object
     }
 
     fun validateServerAddress(address: String): Boolean {
@@ -103,6 +143,40 @@ class PhantomRepository private constructor(private val context: Context) {
         } catch (e: Exception) {
             Log.e(TAG, "Error validating server address", e)
             false
+        }
+    }
+
+    // Helper function to log directory tree
+    private fun logDirectoryTree(startDir: File, tag: String, prefix: String = "") {
+        if (!startDir.exists()) {
+            Log.d(tag, "$prefix[Directory does not exist: ${startDir.absolutePath}]")
+            return
+        }
+        if (!startDir.isDirectory) {
+            Log.d(tag, "$prefix[Not a directory: ${startDir.absolutePath}]")
+            return
+        }
+
+        Log.d(tag, "$prefix${startDir.name}/")
+        val files = try { startDir.listFiles() } catch (e: SecurityException) { null } // Handle potential permission errors
+        if (files == null) {
+            Log.w(tag, "$prefix  [Could not list files - possible permission issue]")
+            return
+        }
+         if (files.isEmpty()) {
+             Log.d(tag, "$prefix  [Directory is empty]")
+             return
+         }
+
+        files.sortedBy { it.name }.forEachIndexed { index, file -> // Sort for consistent output
+            val connector = if (index == files.size - 1) "└── " else "├── "
+            val indent = prefix + if (index == files.size - 1) "    " else "│   "
+            if (file.isDirectory) {
+                 Log.d(tag, "$prefix$connector${file.name}/")
+                 logDirectoryTree(file, tag, indent) // Recurse for subdirectories
+            } else {
+                Log.d(tag, "$prefix$connector${file.name}") // Log file name
+            }
         }
     }
 }

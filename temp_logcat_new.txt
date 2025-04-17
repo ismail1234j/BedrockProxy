@@ -1,604 +1,546 @@
 --------- beginning of main
-04-16 21:33:11.477  7919  7919 I HBD     : m0 EBD key t 0 
+04-17 11:09:07.499  2840  3068 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_reassembler.cc:56 ProcessAdvertisingReport: Ignoring scan response received without advertising event
+04-17 11:09:07.500  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x13, addressType=1, address=XX:XX:XX:XX:E2:71, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-75, periodicAdvInt=0x0
+04-17 11:09:07.532  2840  3068 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_reassembler.cc:56 ProcessAdvertisingReport: Ignoring scan response received without advertising event
+04-17 11:09:07.532  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x13, addressType=1, address=XX:XX:XX:XX:E2:71, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-75, periodicAdvInt=0x0
+04-17 11:09:07.565  2840  3068 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_reassembler.cc:56 ProcessAdvertisingReport: Ignoring scan response received without advertising event
+04-17 11:09:07.566  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x13, addressType=1, address=XX:XX:XX:XX:E2:71, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-75, periodicAdvInt=0x0
+04-17 11:09:07.602  2840  3068 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_reassembler.cc:56 ProcessAdvertisingReport: Ignoring scan response received without advertising event
+04-17 11:09:07.602  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x13, addressType=1, address=XX:XX:XX:XX:E2:71, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-75, periodicAdvInt=0x0
+04-17 11:09:08.180  1670  2042 D InputReader: Btn_touch(8): value=1 when=78168.419836
+04-17 11:09:08.180  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13668 ] when=78168.419836
+04-17 11:09:08.181  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:08.182  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
 --------- beginning of system
-04-16 21:33:11.524  1670  2028 D VibratorManagerService: Vibration 7620 finished with EndInfo{status=FINISHED, endedBy=null}
-04-16 21:33:11.525  1670  2028 D VibratorManagerService: Reporting vibration 7620 finished with EndInfo{status=FINISHED, endedBy=null}
-04-16 21:33:11.525  1670  2028 D VibratorManagerService: Vibration for uid=10212 and with attrs=VibrationAttributes: Usage=TOUCH Audio Usage= USAGE_ASSISTANCE_SONIFICATION tags= Flags=0 ended with status FINISHED
-04-16 21:33:11.527  1325  1325 E SecVibrator-HAL-AIDL-CORE: V_1_0: Vibrator off
-04-16 21:33:11.527  1325  1325 E SecVibrator-HAL-AIDL-CORE: HW_API: >> writeNode node:/timed_output/vibrator/enable val:0
-04-16 21:33:11.530  1325  1325 E SecVibrator-HAL-AIDL-CORE: HW_API: << writeNode node OK : 2
-04-16 21:33:11.533  1670  2028 D VibratorManagerService: VibrationThread released after finished vibration
-04-16 21:33:11.533  1670  2028 D VibratorManagerService: Processing VibrationThread released callback
-04-16 21:33:11.630  7919  7919 I HBD     : m0 EBD ex 
-04-16 21:33:11.630  7919  8488 I HBD     : m0 EBD tb start :1 
-04-16 21:33:11.630  7919  8488 I HBD     : a [SKE_LM] disableTags : id:ar_SA
-04-16 21:33:11.631  7919  8488 I HBD     : a [SKE_LM] disableTags : id:ar_SA
-04-16 21:33:11.631  7919  8488 I HBD     : m0 EBD tb end :1 
-04-16 21:33:11.632  7919  7919 I HBD     : p1 [SCV] (8) 1 3 8 2 8 4 3 2 
-04-16 21:33:12.144   675   675 D io_stats: !@   8,0 r 6364079 159486484 w 2374010 32662992 d 696769 36173468 f 0 0 iot 3533916 0 th 0 0 0 pt 0 inp 0 0 66915.617
-04-16 21:33:12.392  1670  2042 D InputReader: Btn_touch(8): value=1 when=66915.865382
-04-16 21:33:12.392  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.12965 ] when=66915.865382
-04-16 21:33:12.394  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
-04-16 21:33:12.395  1670  2041 I InputDispatcher: Delivering touch to (7919): action: 0x0, f=0x0, d=0, '4d94592', t=1 +(0,-80)
-04-16 21:33:12.395  7919  7919 I ViewRootImpl@7b83c94[InputMethod]: ViewPostIme pointer 0
-04-16 21:33:12.396  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=66915865
-04-16 21:33:12.396  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
-04-16 21:33:12.396  2428  2428 D SearcleGestureHandler: allowGesture: false
-04-16 21:33:12.396  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 895370131 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:12.396  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 895370131 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:12.396  1360  1360 I SurfaceFlinger: SFWD update time=66915870100906
-04-16 21:33:12.400  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 126301662
-04-16 21:33:12.400  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 126301662
-04-16 21:33:12.466  1670  2042 D InputReader: Btn_touch(8): value=0 when=66915.939871
-04-16 21:33:12.466  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=66915.939871
-04-16 21:33:12.467  1670  2041 I InputDispatcher: Delivering touch to (7919): action: 0x1, f=0x0, d=0, '4d94592', t=1 +(0,-80)
-04-16 21:33:12.467  7919  7919 I ViewRootImpl@7b83c94[InputMethod]: ViewPostIme pointer 1
-04-16 21:33:12.481  2840  3426 D ScanFilter: manu data matches
-04-16 21:33:12.481  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-78, periodicAdvInt=0x0
-04-16 21:33:12.485  7919  7919 I HBD     : a IIFO[r:061103adbf] 
-04-16 21:33:12.491  7919  7919 I HBD     : m1 ous -  0 ,  0 ,  27 ,  27 ,  -1 ,  -1
-04-16 21:33:12.494  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
-04-16 21:33:12.500  7919  8488 I HBD     : m0 EBD tb start :1 
-04-16 21:33:12.500  7919  8488 I HBD     : m0 EBD tb end :1 
-04-16 21:33:12.501  7919  7919 I HBD     : p1 [SCV] (9) 5 9 5 5 13 5 7 11 12 
-04-16 21:33:12.501  7919  7919 I HBD     : m0 EBD cm f 1 
-04-16 21:33:12.539  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x13, addressType=1, address=XX:XX:XX:XX:8D:4A, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-87, periodicAdvInt=0x0
-04-16 21:33:12.539  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x13, addressType=1, address=XX:XX:XX:XX:8D:4A, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-87, periodicAdvInt=0x0
-04-16 21:33:12.541  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: TagKeyManager.findCloudId - key: ($)9e5716d2
-04-16 21:33:12.542  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: TagKeyManager.findCloudId - key: ($)9e5716d2
-04-16 21:33:12.542  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForTag.parsePacket - [name][bleMac]($)60:A6[tagState]5[advertisementType]0[privacyId]bd0ecf4a3ae16522[uWBFlag]0[batteryLevel]3[motionDetection]0[lastReceivedTime]1744835592541[rssi]-87[activityTrackingMode]false
-04-16 21:33:12.549  7147 17488 I [+0100]oneconnect[1.8.21.28_01][CORE]: SmartTag@DeviceStatusTriggerTaskImpl.isAvailableGattConnection - deviceId: ($)9e5716d2 | isAvailableGattConnection: false | priorityConnectionSize : 0 | availableConnectionSize : 2
-04-16 21:33:12.673  1670  4087 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 9790, isSameBssidAndFreq true
-04-16 21:33:12.697  1670  1670 I GestureDetector: handleMessage TAP
-04-16 21:33:12.698  1670  1771 I GestureDetector: handleMessage TAP
-04-16 21:33:12.809  7919 31403 I HBD     : b Grammarly checkText revisionId: 123817104, length: 27, time: 3 ms 
-04-16 21:33:12.853  1670  2042 D InputReader: Btn_touch(8): value=1 when=66916.325814
-04-16 21:33:12.854  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.12966 ] when=66916.325814
-04-16 21:33:12.855  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x0, f=0x0, d=0, '7538e8e', t=1 +(0,-2265)
-04-16 21:33:12.857  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 976523166 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:12.858  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 976523166 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:12.859  2428  2428 I ViewRootImpl@3b6baee[NavigationBar0]: ViewPostIme pointer 0
-04-16 21:33:12.861  2428  2428 I KeyButtonView: Back button event: ACTION_DOWN
-04-16 21:33:12.862  2428  2738 I KeyButtonView: injectInputEvent - 4
-04-16 21:33:12.862  2428  2428 V Vibrator: semGetSupportedVibrationType: ret=3
-04-16 21:33:12.862  1670  1700 D InputDispatcher: Inject key (2428/10041): action=0, f=0x48, d=0, time=66916333000000
-04-16 21:33:12.862  1670  1700 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002
-04-16 21:33:12.863  1670  1700 D PhoneWindowManagerExt: setScreenshotEnabled, screenOnFully=true
-04-16 21:33:12.863  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
-04-16 21:33:12.863  2428  2428 D SearcleGestureHandler: allowGesture: false
-04-16 21:33:12.863  1670  1700 D SingleKeyGesture: interceptKeyDown, info : KeyCode=KEYCODE_UNKNOWN, size=0
-04-16 21:33:12.863  1670  1700 D PhoneWindowManagerExt: interceptKeyTq code=4 down=true repeatCount=0 displayId=0 interactive=true
-04-16 21:33:12.863  1670  1700 D WindowManager: interceptKeyTq interceptKeyResult=4
-04-16 21:33:12.863  1670  1700 D PhoneWindowManagerExt: f.b. a=false id=1 he=true ksno=false uid=1000 callingPackage=android reason=Virtual Key - Press Caller=com.android.server.policy.PhoneWindowManager.performHapticFeedback:7290 com.android.server.policy.PhoneWindowManager.performHapticFeedback:7276 com.android.server.policy.PhoneWindowManager.interceptKeyBeforeQueueing:5593 com.android.server.wm.InputManagerCallback.interceptKeyBeforeQueueing:163 com.android.server.input.InputManagerService.interceptKeyBeforeQueueing:3514 
-04-16 21:33:12.863  1670  1700 D VibratorManagerService: vibrate - uid: 1000, opPkg: android, effect: Mono{mEffect=Composed{segments=[SemHaptic{mType=50038, mMagnitude=-1}], repeat=-1, mMagnitudeType=TYPE_TOUCH}}, attrs: VibrationAttributes: Usage=TOUCH Audio Usage= USAGE_UNKNOWN tags= Flags=0, reason: Virtual Key - Press, token: android.os.Binder@168c8ea
-04-16 21:33:12.864  1670  1700 D VibratorManagerService: converted usage = TOUCH(18)
-04-16 21:33:12.864  1670  1700 D VibratorManagerService: semColorfulVibrate : EFFECT_HEAVY_CLICK(14), repeat: -1, usage: TOUCH(18), magnitude: 2000
-04-16 21:33:12.864  1670  1700 D VibratorManagerService: Starting vibrate for vibration 7621
-04-16 21:33:12.865  1670  2041 D WindowManager: interceptKeyTi keyCode=4 down=true repeatCount=0 keyguardOn=false canceled=false
-04-16 21:33:12.865  1670  2041 D PhoneWindowManagerExt: interceptKeyTi code=4 down=true repeatCount=0 displayId=0 interactive=true
-04-16 21:33:12.865  1670  2028 D SemHapticStep: sepIndex=14, intensity=2000, repeat=false, duration=230
-04-16 21:33:12.865  1670  2028 D SemHapticStep: Turning on vibrator 0 for 230ms
-04-16 21:33:12.865  1670  2028 D VibratorController: performHapticEngine packetCnt (1).
-04-16 21:33:12.865  1670  2041 I InputDispatcher: Delivering key to (17420): B action: 0x0 (0), f=0x48, m=0x0, d=0, '8314d4 '
-04-16 21:33:12.868  7919  7919 I HBD     : c skip onKeyDown as physical keyboard not connected 
-04-16 21:33:12.868  1325  1325 E SecVibrator-HAL-AIDL-EXT: V_3_0: performHapticEngine
-04-16 21:33:12.868  1325  1325 E SecVibrator-HAL-AIDL-EXT: V_3_0: performHapticEngine amplitude : 2000
-04-16 21:33:12.868  1325  1325 E SecVibrator-HAL-AIDL-EXT: V_3_0: performHapticEngine packet_cnt : 1
-04-16 21:33:12.868  1325  1325 E SecVibrator-HAL-AIDL-EXT: V_3_0: performHapticEngine total_size : 4
-04-16 21:33:12.868  1325  1325 E SecVibrator-HAL-AIDL-EXT: V_3_0: performHapticEngine : 4 7 2000 2000 1
-04-16 21:33:12.868  7919  7919 I HBD     : HoneyBoardService onKeyDown r:0fe246cd consumed:false 1 
-04-16 21:33:12.868  1325  1325 E SecVibrator-HAL-AIDL-CORE: HW_API: do_on for timeoutMs: 1
-04-16 21:33:12.868  1325  1325 E SecVibrator-HAL-AIDL-CORE: HW_API: >> writeNode node:/timed_output/vibrator/enable val:1
-04-16 21:33:12.868  7919  7919 I InputMethodService: handleBack: mShowInputRequested=true, doIt=false
-04-16 21:33:12.869 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: The input has been finished in ImeInputStage.
-04-16 21:33:12.870  1325  1325 E SecVibrator-HAL-AIDL-CORE: HW_API: << writeNode node OK : 2
-04-16 21:33:12.870  1325  1325 E SecVibrator-HAL-AIDL-EXT: V_3_0: performHapticEngine OK
-04-16 21:33:12.873  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1008733562
-04-16 21:33:12.873  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1008733562
-04-16 21:33:12.934  1670  2042 D InputReader: Btn_touch(8): value=0 when=66916.407450
-04-16 21:33:12.934  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=66916.407450
-04-16 21:33:12.934  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x1, f=0x0, d=0, '7538e8e', t=1 +(0,-2265)
-04-16 21:33:12.934  2428  2428 I ViewRootImpl@3b6baee[NavigationBar0]: ViewPostIme pointer 1
-04-16 21:33:12.935  2428  2428 I KeyButtonView: Back button event: ACTION_UP
-04-16 21:33:12.935  2428  2738 I KeyButtonView: injectInputEvent - 4
-04-16 21:33:12.936  1670  1700 D InputDispatcher: Inject key (2428/10041): action=1, f=0x48, d=0, time=66916408000000
-04-16 21:33:12.936  1670  1700 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002
-04-16 21:33:12.936  1670  1700 D SingleKeyGesture: interceptKeyUp, longPress=false info : KeyCode=KEYCODE_UNKNOWN, size=0
-04-16 21:33:12.936  1670  1700 D SingleKeyGesture: interceptKeyUp, mActiveRule is null
-04-16 21:33:12.936  1670  1700 D PhoneWindowManagerExt: interceptKeyTq code=4 down=false repeatCount=0 displayId=0 interactive=true
-04-16 21:33:12.936  1670  1700 D WindowManager: interceptKeyTq interceptKeyResult=4
-04-16 21:33:12.936  1670  2041 D WindowManager: interceptKeyTi keyCode=4 down=false repeatCount=0 keyguardOn=false canceled=false
-04-16 21:33:12.936  1670  2041 D PhoneWindowManagerExt: interceptKeyTi code=4 down=false repeatCount=0 displayId=0 interactive=true
-04-16 21:33:12.937  1670  2041 I InputDispatcher: Delivering key to (17420): B action: 0x1 (0), f=0x48, m=0x0, d=0, '8314d4 '
-04-16 21:33:12.938  7919  7919 I HBD     : HoneyBoardService onKeyUp r:5b2f51e6 consumed:false 0 
-04-16 21:33:12.938  7919  7919 I InputMethodService: handleBack: mShowInputRequested=true, doIt=true
-04-16 21:33:12.940  1670  1700 I InputMethodManagerService: hideMySoftInput: flags=0
-04-16 21:33:12.940  1670  1700 I ImeTracker: com.ismailjamal.bedrockrelay:12bae143: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
-04-16 21:33:12.940  1670  1700 D InputMethodManagerService: setWindowStateInner, windowToken=android.os.BinderProxy@9817a27, state=ImeTargetWindowState{ imeToken android.os.Binder@527877e imeFocusChanged false hasEditorFocused true requestedImeVisible false imeDisplayId 0 softInputModeState STATE_UNSPECIFIED|ADJUST_PAN isStartInputByGainFocus false}
-04-16 21:33:12.940  1670  1700 V InputMethodManagerService: Calling com.android.server.inputmethod.IInputMethodInvoker@2cf7bf0.hideSoftInput(0, android.os.BinderProxy@9817a27, null) for reason: HIDE_SOFT_INPUT_BY_BACK_KEY
-04-16 21:33:12.945  1670  1700 I ActivityManager: Changes in 10212 5 to 7, 63 to 0
-04-16 21:33:12.946  4517  4517 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1960 android.content.ContextWrapper.startService:842 android.content.ContextWrapper.startService:842 com.sec.android.diagmonagent.sa.receiver.CFLogReceiver.a:17 com.sec.android.diagmonagent.sa.receiver.CFLogReceiver.onReceive:40 
-04-16 21:33:12.946 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: The input has been finished in ImeInputStage.
-04-16 21:33:12.947  7919  7919 I InputMethod: hideSoftInput(): flags=0
-04-16 21:33:12.947  1670  3172 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
-04-16 21:33:12.947  1670  3172 I InputMethodManagerService: setImeWindowStatus: vis=0, backDisposition=0
-04-16 21:33:12.948  7919  7919 I HBD     : HoneyBoardService onFinishInputView finishingInput= false
-04-16 21:33:12.948  1670  4763 V InputMethodManagerService: applyImeVisibility state=0
-04-16 21:33:12.948  1521  8475 I CameraService: onUidStateChanged: uid=10212, procState is changed. (5 -> 7)
-04-16 21:33:12.949  7919  7919 I HBD     : a [UpdatePolicy] [post] a: 3 cl: 65538 kit: [0/0] vt: 0 ir: 1 
-04-16 21:33:12.950  7919 31403 I HBD     : i [SKE_LM] learnInDynamicModel,  false
-04-16 21:33:12.951 17420 17420 I InsetsController: setRequestedVisibleTypes: visible=false, mask=ime, host=com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity, from=android.view.InsetsController.controlAnimationUnchecked:1445 android.view.InsetsController.applyAnimation:2005 android.view.InsetsController.applyAnimation:1968 android.view.InsetsController.hide:1403 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7240 android.view.ViewRootImpl$ViewRootHandler.handleMessage:7166 android.os.Handler.dispatchMessage:106 android.os.Looper.loopOnce:230 android.os.Looper.loop:319 android.app.ActivityThread.main:8919 
-04-16 21:33:12.951  7919 31403 I HBD     : i [SKE_LM] learnInDynamicModel,  true
-04-16 21:33:12.952 17420 17420 I InsetsController: controlAnimationUncheckedInner: Added types=ime, animType=1, host=com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity, from=android.view.InsetsController.controlAnimationUnchecked:1449 android.view.InsetsController.applyAnimation:2005 android.view.InsetsController.applyAnimation:1968 
-04-16 21:33:12.952  1670  4763 D InsetsSourceProvider: updateVisibility: serverVisible=true, clientVisible=false, source=InsetsSource: {3 mType=ime mFrame=[0,1392][1080,2400] mVisible=false mFlags=[]}, controlTarget=Window{8314d4 u0 com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity}, from=com.android.server.wm.ImeInsetsSourceProvider.updateVisibility:154 com.android.server.wm.InsetsSourceProvider.setClientVisible:606 com.android.server.wm.ImeInsetsSourceProvider.setClientVisible:101 com.android.server.wm.InsetsSourceProvider.updateClientVisibility:593 com.android.server.wm.ImeInsetsSourceProvider.updateClientVisibility:173 com.android.server.wm.InsetsStateController.onInsetsModified:275 com.android.server.wm.InsetsPolicy.onInsetsModified:516 com.android.server.wm.Session.updateRequestedVisibleTypes:797 android.view.IWindowSession$Stub.onTransact:1145 com.android.server.wm.Session.onTransact:204 
-04-16 21:33:12.953  1670  4763 I WindowManager: Reparenting to leash, surface=Surface(name=7538e8e NavigationBar0)/@0x1fe059a, leashParent=Surface(name=WindowToken{ce93e89 type=2019 android.os.BinderProxy@d195853})/@0xdf97ecb
-04-16 21:33:12.953  1360  2077 I SurfaceFlinger: id=19212 createSurf, flag=24000, Surface(name=7538e8e NavigationBar0)/@0x1fe059a - animation-leash of insets_animation#19212
-04-16 21:33:12.955  1670  4763 D WindowManager: makeSurface duration=2 leash=Surface(name=Surface(name=7538e8e NavigationBar0)/@0x1fe059a - animation-leash of insets_animation)/@0xdbf53e2
-04-16 21:33:12.955  1670  4763 D InsetsSourceProvider: updateControlForTarget: control=InsetsSourceControl: {e0970001 mType=navigationBars initiallyVisible mSurfacePosition=Point(0, 2265) mInsetsHint=Insets{left=0, top=0, right=0, bottom=135}}, target=Window{8314d4 u0 com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity}, from=com.android.server.wm.InsetsStateController.onControlTargetChanged:358 com.android.server.wm.InsetsStateController.onBarControlTargetChanged:327 com.android.server.wm.InsetsPolicy.updateBarControlTarget:173 com.android.server.wm.InsetsPolicy.updateSystemBars:805 com.android.server.wm.DisplayPolicy.updateSystemBarsLw:3425 
-04-16 21:33:12.955  7919  7919 I HBD     : m1 stopRunningTimers 
-04-16 21:33:12.956  1670  4763 D WindowManager: updateSystemBarAttributes: displayId=0, win=Window{8314d4 u0 com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity}, navColorWin=Window{8314d4 u0 com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity}, focusedCanBeNavColorWin=false, behavior=1, appearance=0, statusBarAppearanceRegions=[AppearanceRegion{ bounds=[0,0][1080,2400]}], requestedVisibilities=-9, from=com.android.server.wm.InsetsStateController.onInsetsModified:281 com.android.server.wm.InsetsPolicy.onInsetsModified:516 com.android.server.wm.Session.updateRequestedVisibleTypes:797 
-04-16 21:33:12.956  7919  7919 I HBD     : f [PF_EN] saveUserData() 0 
-04-16 21:33:12.956  7919  7919 I HBD     : m0 EBD reset pbc:0 pdc:0 
-04-16 21:33:12.956  7919  7919 I HBD     : e unbindCurrentHoneyBoard : com.samsung.android.clipboarduiservice.plugin_clipboard 
-04-16 21:33:12.956  7919  7919 I HBD     : a honeyBoardTouchLayer dismiss. 
-04-16 21:33:12.959  2428 26499 I ViewRootImpl@6a89f78[StatusBar]: Resizing android.view.ViewRootImpl@4f4a1c8: frame = [0,0][1080,80] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:12.959  2924 17184 I ViewRootImpl@ba316a5[CocktailBarService]: Resizing android.view.ViewRootImpl@e66c466: frame = [1013,616][1080,992] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:12.959  2428  3213 I ViewRootImpl@1a85961[ScreenDecorOverlay]: Resizing android.view.ViewRootImpl@9d5e61: frame = [0,0][1080,80] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:12.959  2924  2924 I ViewRootImpl@ba316a5[CocktailBarService]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[1013,616][1080,992] display=[0,0][1080,2265] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:12.959  7919  7919 I HBD     : e expression state[false], searchState[0] 
-04-16 21:33:12.959  2428  3585 I ViewRootImpl@1a85961[ScreenDecorOverlay]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][1080,80] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:12.960  7919  7919 I HBD     : k All camera is available, so, ExtractText will be enabled 
-04-16 21:33:12.960  7919  7919 I HBD     : a clear BaseLanguageRepo 
-04-16 21:33:12.960  2428 26499 I ViewRootImpl@d9e0a6a[ScreenDecorOverlayBottom]: Resizing android.view.ViewRootImpl@a086f46: frame = [0,2320][1080,2400] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:12.960  2428  2439 I ViewRootImpl@3b6baee[NavigationBar0]: Resizing android.view.ViewRootImpl@e240261: frame = [0,2265][1080,2400] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:12.960  2428  3585 I ViewRootImpl@d9e0a6a[ScreenDecorOverlayBottom]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,2320][1080,2400] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:12.961 17420 17431 I ViewRootImpl@cd32dfb[MainActivity]: Resizing android.view.ViewRootImpl@2c15705: frame = [0,0][1080,2400] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:12.961  4391  4391 I SSS:AugmentedAutofillService: AugmentedAutofillService: onConnected()
-04-16 21:33:12.961  1670  2254 D ConnectivityService:  Removing from current network [101 WIFI], leaving 180 requests.
-04-16 21:33:12.961  7919 31403 I HBD     : i [SKE_LM] saveDynamicModel,  false ,  true
-04-16 21:33:12.962  7919  7919 I HBD     : b Grammarly stop session 2 ms 
-04-16 21:33:12.962  7919  7919 I HBD     : x onFinishInputView 
-04-16 21:33:12.962  7919  7919 I HBD     : a [StopHoneyVoiceListeningWithReleaseDecorator] stopListeningWithRelease() 
-04-16 21:33:12.962  7919  7919 I IceCone : c HoneyVoice stopListening by stopListeningWithRelease() 
-04-16 21:33:12.964  7919  7919 I HBD     : HoneyBoardService [PF_CL][onFinishInputView]  16 ms 
-04-16 21:33:12.964  7919  7919 I HBD     : b showInputView requested current = true, applyNow = false 
-04-16 21:33:12.964  7919  7919 I HBD     : HoneyBoardService onWindowHidden 
-04-16 21:33:12.964  7919  7919 I HBD     : HoneyBoardService [PF_CL][onWindowHidden]  0 ms 
-04-16 21:33:12.967  2924  2924 I Edge.CocktailBarUiHandler: onReceive: action = ResponseAxT9Info sipVisibility = 0
-04-16 21:33:12.969  1670  3172 V WindowManager: Relayout Window{4d94592 u0 InputMethod}: viewVisibility=0 req=1080x2320 ty=2011 d0
-04-16 21:33:12.969  7919  7919 I BLASTBufferQueue_Java: update, w= 1080 h= 2320 mName = ViewRootImpl@7b83c94[InputMethod] mNativeObject= 0xb400007450cc0670 sc.mNativeObject= 0xb4000074a0caae10 format= -2 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3017 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 
-04-16 21:33:12.969  7919  7919 I ViewRootImpl@7b83c94[InputMethod]: Relayout returned: old=(0,80,1080,2400) new=(0,80,1080,2400) relayoutAsync=true req=(1080,2320)0 dur=1 res=0x0 s={true 0xb400007490d32930} ch=false seqId=0
-04-16 21:33:12.969  7919  7919 I ViewRootImpl@7b83c94[InputMethod]: registerCallbackForPendingTransactions
-04-16 21:33:12.971  7919  7919 I HBD     : HoneyBoardService onTrimMemory 20
-04-16 21:33:12.971  7919 22023 I ViewRootImpl@7b83c94[InputMethod]: mWNT: t=0xb4000074b0d20670 mBlastBufferQueue=0xb400007450cc0670 fn= 20 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$6.onFrameDraw:5635 android.view.ViewRootImpl$2.onFrameDraw:2146 android.view.ThreadedRenderer$1.onFrameDraw:792 
-04-16 21:33:12.971  7919  7919 I HBD     : k Init expand button state by global layout listener 
-04-16 21:33:12.972  1670  3172 V WindowManager: Relayout hash=4d94592, pid=0, syncId=-1: mAttrs={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1401b3 preferredMinDisplayRefreshRate=60.0 receive insets ignoring z-order
-04-16 21:33:12.972  1670  3172 V WindowManager:   fl=81800108
-04-16 21:33:12.972  1670  3172 V WindowManager:   pfl=12000000
-04-16 21:33:12.972  1670  3172 V WindowManager:   bhv=DEFAULT
-04-16 21:33:12.972  1670  3172 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS
-04-16 21:33:12.972  1670  3172 V WindowManager:   fitSides=LEFT TOP RIGHT
-04-16 21:33:12.972  1670  3172 V WindowManager:   fitIgnoreVis dimDuration=150 naviIconColor=0}
-04-16 21:33:12.979  2428  2428 D NavigationBar: setImeWindowStatus displayId=0 vis=0 backDisposition=0 showImeSwitcher=false imeShown=false
-04-16 21:33:12.979  2428  2428 D Navbar.Store: handleEvent(0) OnNavBarIconHintChanged(iconHint=0) [Module] NavigationBar
-04-16 21:33:12.979  2428  2428 D Navbar.Store: --[Band]SETUPWIZARD_PACK_SET_NAVBAR_ICON_HINT
-04-16 21:33:12.979  2428  2428 D Navbar.Store: --[Band]VIS_PACK_REEVAULATE_NAVBAR
-04-16 21:33:12.979  2428  2428 D Navbar.Store: ----apply(0) NavBarStoreAction$ReevaluateNavBar
-04-16 21:33:12.980 17420 17420 I InsetsController: onStateChanged: host=com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity, from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7209, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 80 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(510, 0 - 570, 80), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={3.0} cutoutSpec={M 0,0 H -10 V 26.66666666666667 H 10 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 80) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2400 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {b8db0000 mType=statusBars mFrame=[0,0][1080,80] mVisible=true mFlags=[]}, InsetsSource: {b8db0005 mType=mandatorySystemGestures mFrame=[0,0][1080,114] mVisible=true mFlags=[]}, InsetsSource: {b8db0006 mType=tappableElement mFrame=[0,0][1080,80] mVisible=true mFlags=[]}, InsetsSource: {e0970001 mType=navigationBars mFrame=[0,2265][1080,2400] mVisible=true mFlags=[]}, InsetsSource: {e0970004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {e0970005 mType=mandatorySystemGestures mFrame=[0,2265][1080,2400] mVisible=true mFlags=[]}, InsetsSource: {e0970006 mType=tappableElement mFrame=[0,2265][1080,2400] mVisible=true mFlags=[]}, InsetsSource: {e0970024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,1392][1080,2400] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,80] mVisible=true mFlags=[]} }
-04-16 21:33:12.980  2428  2428 D Navbar.Store: ----handleEvent(0) OnUpdateRemoteViewContainer(leftContainer=android.widget.LinearLayout{6a8e989 V.E...... ........ 0,0-118,135 #7f0a0597 app:id/left_remoteview}, rightContainer=android.widget.LinearLayout{6095d8e I.E...... ......ID 962,0-1080,135 #7f0a08aa app:id/right_remoteview}, contextualButtonVisible=false, darkIntensity=0.0, displayId=0) [Module] SamsungNavigationBarView
-04-16 21:33:12.980  2428  2428 D Navbar.Store: ------[Band]REMOTE_VIEW_PACK_SET_REMOTEVIEW_CONTAINER
-04-16 21:33:12.980  2428  2428 D Navbar.Store: --------apply(0) NavBarStoreAction$UpdateRemoteViewContainer
-04-16 21:33:12.980 17420 17420 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity
-04-16 21:33:12.980  2428  2428 D Navbar.Store: --------apply(0) NavBarStoreAction$UpdateRemoteViewDarkIntensity
-04-16 21:33:12.980  2428  2428 D Navbar.Store: handleEvent(0) OnUpdateSysUiStateFlag(noArguments=true) [Module] SamsungNavigationBarView
-04-16 21:33:12.980  2428  2428 D Navbar.Store: --[Band]GESTURE_PACK_UPDATE_SYSTEMUI_STATE_FLAG
-04-16 21:33:12.980  2428  2428 D Navbar.Store: --[Band] (afterAction) GESTURE_PACK_UPDATE_SYSTEMUI_STATE_FLAG
-04-16 21:33:12.980  2428  2428 D SysUiState: SysUiState changed: old=0x10060000 new=0x10020000
-04-16 21:33:12.981 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][1080,2400] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:12.981 17420 17420 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=ImeCallback=ImeOnBackInvokedCallback@267378922 Callback=android.window.IOnBackInvokedCallback$Stub$Proxy@cba9b0e
-04-16 21:33:12.982  2924 16477 I HoneySpace.SystemUiRepository: systemUiFlags: allow_gesture|awake
-04-16 21:33:12.982  1670  4763 D CoreBackPreview: Window{8314d4 u0 com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@afb23cf, mPriority=0, mIsAnimationCallback=false}
-04-16 21:33:12.983  2924  2996 I HoneySpace.TaskbarEventTracker: invokeEvent() called with: event = SystemUiStateChanged(stateFlags=268566528)
-04-16 21:33:12.984  2428  2428 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-04-16 21:33:12.984  7919 17565 I HBD     : m1 requestCursorUpdates(0),  28
-04-16 21:33:12.986  2428  2428 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-04-16 21:33:12.987  2428  2428 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-04-16 21:33:12.988  2428  2428 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-04-16 21:33:12.989  2428  2428 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
-04-16 21:33:12.990  2428  2428 I ViewRootImpl@6a89f78[StatusBar]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][1080,80] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:12.990  2428  2428 I ViewRootImpl@3b6baee[NavigationBar0]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,2265][1080,2400] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:12.990  2428  2428 D NavigationBarController: setNavigationBarShortcut requestClass : com.samsung.android.honeyboard, remoteViews : null, position : 0, priority : 12
-04-16 21:33:12.990  2428  2428 D Navbar.Store: handleEvent(0) OnSetRemoteView(requestClass=com.samsung.android.honeyboard, remoteViews=null, position=0, priority=12) [Module] NavigationBarController
-04-16 21:33:12.990  2428  2428 D Navbar.Store: --[Band]REMOTE_VIEW_PACK_SET_NAVBAR_SHORTCUT_TO_MANAGER
-04-16 21:33:12.990  2428  2428 D Navbar.Store: ----apply(0) NavBarStoreAction$UpdateRemoteViewShortcut
-04-16 21:33:12.990  2428  2428 D Navbar.Store: --[Band]GESTURE_PACK_UPDATE_GAMETOOLS_VISIBILITY
-04-16 21:33:12.990  2428  2428 D Navbar.Store: --NavBarStates(0) isGameMode: false
-04-16 21:33:12.990  2428  2428 D Navbar.Store: ----apply(0) NavBarStoreAction$UpdateSysUiFlags
-04-16 21:33:12.990  2428  2428 D Navbar.Store: ----set 4294967296 : false
-04-16 21:33:12.990  2428  2428 D Navbar.Store: --[Band]REMOTE_VIEW_PACK_SET_NAVBAR_SHORTCUT_TO_MANAGER
-04-16 21:33:12.990  2428  2428 D Navbar.Store: ----apply(0) NavBarStoreAction$InvalidateRemoteView
-04-16 21:33:12.990  2428  2428 D Navbar.Store: ----handleEvent(0) OnUpdateRemoteViewContainer(leftContainer=android.widget.LinearLayout{6a8e989 V.E...... ......ID 0,0-118,135 #7f0a0597 app:id/left_remoteview}, rightContainer=android.widget.LinearLayout{6095d8e I.E...... ......ID 962,0-1080,135 #7f0a08aa app:id/right_remoteview}, contextualButtonVisible=false, darkIntensity=0.0, displayId=0) [Module] SamsungNavigationBarView
-04-16 21:33:12.990  2428  2428 D Navbar.Store: ------[Band]REMOTE_VIEW_PACK_SET_REMOTEVIEW_CONTAINER
-04-16 21:33:12.990  2428  2428 D Navbar.Store: --------apply(0) NavBarStoreAction$UpdateRemoteViewContainer
-04-16 21:33:12.990  2428  2428 D Navbar.Store: --------apply(0) NavBarStoreAction$UpdateRemoteViewDarkIntensity
-04-16 21:33:12.992  2428  2428 I BLASTBufferQueue_Java: update, w= 1080 h= 135 mName = ViewRootImpl@3b6baee[NavigationBar0] mNativeObject= 0xb400007450cc3eb0 sc.mNativeObject= 0xb4000074a0d0a510 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3017 android.view.ViewRootImpl.relayoutWindow:10131 android.view.ViewRootImpl.performTraversals:4110 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 
-04-16 21:33:12.992  1670  3172 V WindowManager: Relayout Window{7538e8e u0 NavigationBar0}: viewVisibility=0 req=1080x135 ty=2019 d0
-04-16 21:33:12.992  2428  2428 I ViewRootImpl@3b6baee[NavigationBar0]: Relayout returned: old=(0,2265,1080,2400) new=(0,2265,1080,2400) relayoutAsync=true req=(1080,135)0 dur=0 res=0x0 s={true 0xb400007490cbb5b0} ch=false seqId=37
-04-16 21:33:12.992  2428  2428 I ViewRootImpl@3b6baee[NavigationBar0]: registerCallbackForPendingTransactions
-04-16 21:33:12.992  2428  2428 D Navbar.Store: --------NavBarStates(0) canUseNavBarBackgroundFrame: false
-04-16 21:33:12.993  2428  3270 I ViewRootImpl@3b6baee[NavigationBar0]: mWNT: t=0xb4000074b0d30210 mBlastBufferQueue=0xb400007450cc3eb0 fn= 20418 mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$6.onFrameDraw:5635 android.view.ViewRootImpl$2.onFrameDraw:2146 android.view.ThreadedRenderer$1.onFrameDraw:792 
-04-16 21:33:12.994  1670  3172 V WindowManager: Relayout hash=7538e8e, pid=0, syncId=-1: mAttrs={(0,0)(fillx135) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} layoutInDisplayCutoutMode=always ty=NAVIGATION_BAR fmt=TRANSLUCENT
-04-16 21:33:12.994  1670  3172 V WindowManager:   fl=20840028
-04-16 21:33:12.994  1670  3172 V WindowManager:   pfl=33001000
-04-16 21:33:12.994  1670  3172 V WindowManager:   bhv=DEFAULT
-04-16 21:33:12.994  1670  3172 V WindowManager:   providedInsets:
-04-16 21:33:12.994  1670  3172 V WindowManager:     InsetsFrameProvider: {id=#e0970001, index=0, type=navigationBars, source=FRAME, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=135}, insetsSizeOverrides=[TypedInsetsSize: {windowType=INPUT_METHOD, insetsSize=null}]}
-04-16 21:33:12.994  1670  3172 V WindowManager:     InsetsFrameProvider: {id=#e0970006, index=0, type=tappableElement, source=FRAME, flags=[]}
-04-16 21:33:12.994  1670  3172 V WindowManager:     InsetsFrameProvider: {id=#e0970005, index=0, type=mandatorySystemGestures, source=FRAME, flags=[]}
-04-16 21:33:12.994  1670  3172 V WindowManager:     InsetsFrameProvider: {id=#e0970004, index=0, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}}
-04-16 21:33:12.994  1670  3172 V WindowManager:     InsetsFrameProvider: {id=#e0970024, index=1, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}}
-04-16 21:33:12.994  1670  3172 V WindowManager:   paramsForRotation:
-04-16 21:33:12.994  1670  3172 V WindowManager:     ROTATION_0={(0,0)(fillx135) gr=BOTTOM CENTER_VERTICAL layoutInDisplayCutoutMode=always ty=NAVIGATION_BAR fmt=TRANSLUCENT
-04-16 21:33:12.994  1670  3172 V WindowManager:       fl=20840028
-04-16 21:33:12.994  1670  3172 V WindowManager:       pfl=31001000
-04-16 21:33:12.994  1670  3172 V WindowManager:       bhv=DEFAULT
-04-16 21:33:12.994  1670  3172 V WindowManager:       providedInsets:
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970001, index=0, type=navigationBars, source=FRAME, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=135}, insetsSizeOverrides=[TypedInsetsSize: {windowType=INPUT_METHOD, insetsSize=null}]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970006, index=0, type=tappableElement, source=FRAME, flags=[]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970005, index=0, type=mandatorySystemGestures, source=FRAME, flags=[]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970004, index=0, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970024, index=1, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}} naviIconColor=0}
-04-16 21:33:12.994  1670  3172 V WindowManager:     ROTATION_90={(0,0)(135xfill) gr=RIGHT CENTER_HORIZONTAL layoutInDisplayCutoutMode=always ty=NAVIGATION_BAR fmt=TRANSLUCENT
-04-16 21:33:12.994  1670  3172 V WindowManager:       fl=20840028
-04-16 21:33:12.994  1670  3172 V WindowManager:       pfl=31001000
-04-16 21:33:12.994  1670  3172 V WindowManager:       bhv=DEFAULT
-04-16 21:33:12.994  1670  3172 V WindowManager:       providedInsets:
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970001, index=0, type=navigationBars, source=FRAME, flags=[], insetsSizeOverrides=[TypedInsetsSize: {windowType=INPUT_METHOD, insetsSize=null}]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970006, index=0, type=tappableElement, source=FRAME, flags=[]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970005, index=0, type=mandatorySystemGestures, source=FRAME, flags=[]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970004, index=0, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970024, index=1, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}} naviIconColor=0}
-04-16 21:33:12.994  1670  3172 V WindowManager:     ROTATION_180={(0,0)(fillx135) gr=BOTTOM CENTER_VERTICAL layoutInDisplayCutoutMode=always ty=NAVIGATION_BAR fmt=TRANSLUCENT
-04-16 21:33:12.994  1670  3172 V WindowManager:       fl=20840028
-04-16 21:33:12.994  1670  3172 V WindowManager:       pfl=31001000
-04-16 21:33:12.994  1670  3172 V WindowManager:       bhv=DEFAULT
-04-16 21:33:12.994  1670  3172 V WindowManager:       providedInsets:
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970001, index=0, type=navigationBars, source=FRAME, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=135}, insetsSizeOverrides=[TypedInsetsSize: {windowType=INPUT_METHOD, insetsSize=null}]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970006, index=0, type=tappableElement, source=FRAME, flags=[]}
-04-16 21:33:12.994  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970005, index=0, type=mandatorySystemGestures, source=FRAME, flags=[]}
-04-16 21:33:12.995  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970004, index=0, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}}
-04-16 21:33:12.995  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970024, index=1, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}} naviIconColor=0}
-04-16 21:33:12.995  1670  3172 V WindowManager:     ROTATION_270={(0,0)(135xfill) gr=LEFT CENTER_HORIZONTAL layoutInDisplayCutoutMode=always ty=NAVIGATION_BAR fmt=TRANSLUCENT
-04-16 21:33:12.995  1670  3172 V WindowManager:       fl=20840028
-04-16 21:33:12.995  1670  3172 V WindowManager:       pfl=31001000
-04-16 21:33:12.995  1670  3172 V WindowManager:       bhv=DEFAULT
-04-16 21:33:12.995  1670  3172 V WindowManager:       providedInsets:
-04-16 21:33:12.995  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970001, index=0, type=navigationBars, source=FRAME, flags=[], insetsSizeOverrides=[TypedInsetsSize: {windowType=INPUT_METHOD, insetsSize=null}]}
-04-16 21:33:12.995  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970006, index=0, type=tappableElement, source=FRAME, flags=[]}
-04-16 21:33:12.995  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970005, index=0, type=mandatorySystemGestures, source=FRAME, flags=[]}
-04-16 21:33:12.995  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970004, index=0, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}}
-04-16 21:33:12.995  1670  3172 V WindowManager:         InsetsFrameProvider: {id=#e0970024, index=1, type=systemGestures, source=DISPLAY, flags=[], insetsSize=Insets{left=0, top=0, right=0, bottom=0}, mMinimalInsetsSizeInDisplayCutoutSafe=Insets{left=0, top=0, right=0, bottom=0}} naviIconColor=0} naviIconColor=0}
-04-16 21:33:13.062  7919 31403 I HBD     : i [SKE_LM] writeDynamicModel
-04-16 21:33:13.071  1670  1845 W PackageManager: Not removing package com.google.android.trichromelibrary hosting lib com.google.android.trichromelibrary version 636715933 used by [VersionedPackage[com.android.chrome/636715933]] for user 0
-04-16 21:33:13.095  1670  2028 D VibratorManagerService: Vibration 7621 finished with EndInfo{status=FINISHED, endedBy=null}
-04-16 21:33:13.095  1670  2028 D VibratorManagerService: Reporting vibration 7621 finished with EndInfo{status=FINISHED, endedBy=null}
-04-16 21:33:13.095  1670  2028 D VibratorManagerService: Vibration for uid=1000 and with attrs=VibrationAttributes: Usage=TOUCH Audio Usage= USAGE_UNKNOWN tags= Flags=0 ended with status FINISHED
-04-16 21:33:13.095  1325  1325 E SecVibrator-HAL-AIDL-CORE: V_1_0: Vibrator off
-04-16 21:33:13.096  1325  1325 E SecVibrator-HAL-AIDL-CORE: HW_API: >> writeNode node:/timed_output/vibrator/enable val:0
-04-16 21:33:13.098  1325  1325 E SecVibrator-HAL-AIDL-CORE: HW_API: << writeNode node OK : 2
-04-16 21:33:13.098  1670  2028 D VibratorManagerService: VibrationThread released after finished vibration
-04-16 21:33:13.098  1670  2028 D VibratorManagerService: Processing VibrationThread released callback
-04-16 21:33:13.157  1670  1771 I GestureDetector: handleMessage TAP
-04-16 21:33:13.158  1670  1670 I GestureDetector: handleMessage TAP
-04-16 21:33:13.200  1670  4763 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
-04-16 21:33:13.202  2428  2428 D NavigationBar: setImeWindowStatus displayId=0 vis=0 backDisposition=0 showImeSwitcher=false imeShown=false
-04-16 21:33:13.227  1670  2042 D InputReader: Btn_touch(8): value=1 when=66916.700165
-04-16 21:33:13.227  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.12967 ] when=66916.700165
-04-16 21:33:13.227  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
-04-16 21:33:13.227  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x0, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:13.228  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
-04-16 21:33:13.228  2428  2428 D SearcleGestureHandler: allowGesture: false
-04-16 21:33:13.228 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
-04-16 21:33:13.229  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 876378388 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:13.229  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 876378388 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:13.235  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 852040379
-04-16 21:33:13.235  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 852040379
-04-16 21:33:13.268  2924  2924 I Edge.TrayVisibilityController: getComputedTrayVisible : keyguardState = 1
-04-16 21:33:13.268  2924  2924 I Edge.TrayVisibilityController: updateTrayVisible: State=1 visible=1 mCurrentVisible=1 specificMode=0
-04-16 21:33:13.268  2924  2924 I Edge.TrayStateController: onNotifyUpdateTray: state=0
-04-16 21:33:13.285 17420 17420 I InsetsController: cancelAnimation: types=ime, animType=1, host=com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity, from=android.view.InsetsController.notifyFinished:1748 android.view.InsetsAnimationThreadControlRunner$1.lambda$notifyFinished$0:85 android.view.InsetsAnimationThreadControlRunner$1.$r8$lambda$RAf1SfIREsj9-wH5FOigMy6eLkM:0 
-04-16 21:33:13.287 17420 17420 I ImeTracker: com.ismailjamal.bedrockrelay:edcb43d6: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
-04-16 21:33:13.287 17420 17420 I InputMethodManager_LC: notifyImeHidden: IInputMethodManagerGlobalInvoker.hideSoftInput
-04-16 21:33:13.288  1670  3172 D InputMethodManagerService: hideSoftInput
-04-16 21:33:13.288  1670  3172 V InputMethodManagerService: Client requesting input be hidden
-04-16 21:33:13.288  1670  3172 D InputMethodManagerService: setWindowStateInner, windowToken=android.os.BinderProxy@9817a27, state=ImeTargetWindowState{ imeToken android.os.Binder@4f37d3a imeFocusChanged false hasEditorFocused true requestedImeVisible false imeDisplayId 0 softInputModeState STATE_UNSPECIFIED|ADJUST_PAN isStartInputByGainFocus false}
-04-16 21:33:13.288  1670  3172 I ImeTracker: com.ismailjamal.bedrockrelay:edcb43d6: onCancelled at PHASE_SERVER_SHOULD_HIDE
-04-16 21:33:13.288  1670  3172 V InputMethodManagerService: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
-04-16 21:33:13.289 17420 17420 I ImeTracker: com.ismailjamal.bedrockrelay:12bae143: onHidden
-04-16 21:33:13.291  7919  7919 I InputMethodService: scheduleImeSurfaceRemoval: removeImeSurface is posted.
-04-16 21:33:13.299  1360  1360 I Layer   : Layer [Surface(name=4d94592 InputMethod)/@0xf377360 - animation-leash of insets_animation#19210] hidden!! flag(1)
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger: Display 4633128672291735937 HWC layers:
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger:      DEVICE | 0xb400007b47b6bdd0 | 0102 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.ismailjamal.bedrockrelay/com.ism[...]drockrelay.MainActivity$_17420#19203
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger:      DEVICE | 0xb400007b47b63c50 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   80.0 |    0    0 1080   80 | StatusBar$_2428#96
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger:      DEVICE | 0xb400007b47b86390 | 0100 | RGBA_8888    |    0.0    0.0   67.0  376.0 | 1013  616 1080  992 | com.sec.android.app.launcher/com.sam[...].edge.CocktailBarService$_2924#19185
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger:      DEVICE | 0xb400007b47b63710 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_2428#93
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger:      DEVICE | 0xb400007b47b69ad0 | 0140 | RGBA_8888    |    0.0    0.0 1080.0   80.0 |    0    0 1080   80 | ScreenDecorOverlay$_2428#106
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger:      DEVICE | 0xb400007b47b876d0 | 0140 | RGBA_8888    |    0.0    0.0 1080.0   80.0 |    0 2320 1080 2400 | ScreenDecorOverlayBottom$_2428#107
-04-16 21:33:13.307  1360  1360 D SurfaceFlinger: 
-04-16 21:33:13.318  1670  2042 D InputReader: Btn_touch(8): value=0 when=66916.791998
-04-16 21:33:13.319  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=66916.791998
-04-16 21:33:13.319  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x1, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:13.320 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
-04-16 21:33:13.322 17420 17420 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
-04-16 21:33:13.322 17420 17420 D PhantomViewModel: UI LOG: Attempting to start proxy...
-04-16 21:33:13.322 17420 17420 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
-04-16 21:33:13.327 17420 17420 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
-04-16 21:33:13.334 17420 17420 D PhantomService: Service onStartCommand received - Action: null
-04-16 21:33:13.336  2428 26499 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:13.337 17420 17420 I PhantomService: Processing START command.
-04-16 21:33:13.337 17420 17420 D PhantomService: SERVICE LOG: Received start request:
-04-16 21:33:13.338 17420 17420 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
-04-16 21:33:13.339 17420 17459 D PhantomRepository: Entering getBinaryFile
-04-16 21:33:13.340 17420 17459 E PhantomRepository: Binary file does not exist at: /data/app/~~jBUBDSNdL8sWH59CQf3hDQ==/com.ismailjamal.bedrockrelay-WJqpRj5DOAHgGzNfQKaOcQ==/lib/arm64/libphantom.so
-04-16 21:33:13.340 17420 17420 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
-04-16 21:33:13.341 17420 17459 E PhantomService: Failed to get binary file from repository
-04-16 21:33:13.341 17420 17459 E PhantomService: java.lang.RuntimeException: Binary file is missing: /data/app/~~jBUBDSNdL8sWH59CQf3hDQ==/com.ismailjamal.bedrockrelay-WJqpRj5DOAHgGzNfQKaOcQ==/lib/arm64/libphantom.so
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:68)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
-04-16 21:33:13.341 17420 17459 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
-04-16 21:33:13.341 17420 17459 D PhantomService: SERVICE LOG: Error: Failed to get binary file: Binary file is missing: /data/app/~~jBUBDSNdL8sWH59CQf3hDQ==/com.ismailjamal.bedrockrelay-WJqpRj5DOAHgGzNfQKaOcQ==/lib/arm64/libphantom.so
-04-16 21:33:13.341 17420 17459 I PhantomService: Stopping process and service.
-04-16 21:33:13.342 17420 17420 D PhantomService: Notification updated: Proxy running...
-04-16 21:33:13.342 17420 17460 D PhantomService: Stop command issued, but process was not running.
-04-16 21:33:13.343  2428 26499 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:13.343  2428 26499 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
-04-16 21:33:13.345  1670  1670 D EdgeLightingManager: isCallingUserSupported : callingUserId=0, mUserId=0, isDualAppId=false, isKnoxId=false
-04-16 21:33:13.345  1670  1670 D EdgeLightingManager: hideForNotification : packageName = com.ismailjamal.bedrockrelay
-04-16 21:33:13.345  1670  1670 D EdgeLightingPolicyManager:NotificationGroup: remove : sbn : StatusBarNotification(pkg=com.ismailjamal.bedrockrelay user=UserHandle{0} id=1 tag=null key=0|com.ismailjamal.bedrockrelay|1|null|10381: Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0))
-04-16 21:33:13.345  1670  1670 D EdgeLightingPolicyManager.NotificationGroup: group notification count : 3
-04-16 21:33:13.345  1670  1670 D EdgeLightingManager: hideForNotification : isInteractive is true
-04-16 21:33:13.346  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10381, reason = 8
-04-16 21:33:13.351 17420 17459 D PhantomService: Process coroutine finished.
-04-16 21:33:13.352  2428  2428 D BubblesManager: setupNotifPipeline(), onEntryRemoved : reason=8
-04-16 21:33:13.355  1670  1670 D NotificationReminder: removeFromNotificationList record com.ismailjamal.bedrockrelay
-04-16 21:33:13.355  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
-04-16 21:33:13.356  2924  2924 I HoneySpace.NotificationListener: onNotificationRemoved com.ismailjamal.bedrockrelay: 0|com.ismailjamal.bedrockrelay|1|null|10381: 0
-04-16 21:33:13.356  5115  6340 I NotificationPipeline: Processing notification dismissal on phone: 0|com.ismailjamal.bedrockrelay|1|null|10381
-04-16 21:33:13.357  5115  6340 E Notification4Water_NB: WatchFactory.getWatch-lastConnectedNodeId is null
-04-16 21:33:13.357  2924 16477 I HoneySpace.PackageEventOperator: [ApplistViewModel] badge count is updated. com.ismailjamal.bedrockrelay/.MainActivity#UserHandle{0}|690 : 0
-04-16 21:33:13.360  5115  6340 I NotifDismissalHandler: Notification 0|com.ismailjamal.bedrockrelay|1|null|10381 dismissed on phone, deleting data item /bridger/stream_item:4c58f2aa:com.ismailjamal.bedrockrelay:1:null_tag:0~7Ccom.ismailjamal.bedrockrelay~7C1~7Cnull~7C10381
-04-16 21:33:13.362  5115  6340 I CallClient: Can't remove: no record of call with id 0|com.ismailjamal.bedrockrelay|1|null|10381.
-04-16 21:33:13.367  2428  2428 D PluginActionManager: stopListening
-04-16 21:33:13.372  2428  2428 I AODNotificationManager: updateNotification() 
-04-16 21:33:13.415  7162  7400 I Finsky  : [214] lob.run(53): AIM: AppInfoManager-Perf > Destroying AppInfoManager ...
-04-16 21:33:13.447  1670  1773 D SGM:GameManager: identifyForegroundApp. com.ismailjamal.bedrockrelay, mCurrentUserId: 0, callerUserId: 0
-04-16 21:33:13.447  1670  1773 D SGM:PkgDataHelper: getGamePkgData(). com.ismailjamal.bedrockrelay
-04-16 21:33:13.448  1670  1773 D SGM:SemGameManager: isForegroundGame(), ret=false
-04-16 21:33:13.448  1670 17570 I SemInputDeviceManagerService: setMotionControl: maybe not supported or not yet enabled
-04-16 21:33:13.448  1670 17570 D SemInputDeviceManager: setProperty: (100) CMD,SIP,0
-04-16 21:33:13.448  1670 17570 I SemInputCommandService: setPropertyAllTouch: SIP,0 retDefault=1 retExtra=-2
-04-16 21:33:13.448  1670  2052 D SemInputDevice:TSP: SetPropertyTask: CMD,set_sip_mode,0 [04-16 21:33:13.448]
-04-16 21:33:13.448  1670 17570 D TspStateManager: wrote command: cmd=0, type=5
-04-16 21:33:13.448  1670 17571 D SemInputDeviceManager: setProperty: (0) CMD,GRIP_DATA,1,45,7,15,720,15,2400
-04-16 21:33:13.448  1670 17571 D TspStateManager: wrote command: cmd=1,45,7,15,720,15,2400, type=1
-04-16 21:33:13.449  1319  1319 I sysinput:Touch: writeInformation:249, OK
-04-16 21:33:13.450  1670  2052 D SysinputHAL_V1_3(V1_2): runTspCmdNoRead(TSP(1)): set_sip_mode,0 ret=0
-04-16 21:33:13.450  1670  2052 D SemInputDevice:TSP: SetPropertyTask: CMD,set_grip_data,1,45,7,15,720,15,2400 [04-16 21:33:13.448]
-04-16 21:33:13.451  1319  1319 I sysinput:Touch: writeInformation:249, OK
-04-16 21:33:13.451  1670  2052 D SysinputHAL_V1_3(V1_2): runTspCmdNoRead(TSP(1)): set_grip_data,1,45,7,15,720,15,2400 ret=0
-04-16 21:33:13.529  1670  1771 I GestureDetector: handleMessage TAP
-04-16 21:33:13.529  1670  1670 I GestureDetector: handleMessage TAP
-04-16 21:33:13.540  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
-04-16 21:33:13.540  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10381
-04-16 21:33:13.544  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
-04-16 21:33:13.544  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10381
-04-16 21:33:13.792  7919  7919 I InputMethodService: removeImeSurface
-04-16 21:33:13.792  7919  7919 I InputMethodService: cancelImeSurfaceRemoval: removeCallbacks
-04-16 21:33:13.802  7919  7919 I ViewRootImpl@7b83c94[InputMethod]: destroyHardwareResources: Callers=android.view.ViewRootImpl.performTraversals:3932 android.view.ViewRootImpl.doTraversal:3288 android.view.ViewRootImpl$TraversalRunnable.run:11344 android.view.Choreographer$CallbackRecord.run:1689 android.view.Choreographer$CallbackRecord.run:1698 android.view.Choreographer.doCallbacks:1153 android.view.Choreographer.doFrame:1079 android.view.Choreographer$FrameDisplayEventReceiver.run:1646 android.os.Handler.handleCallback:958 android.os.Handler.dispatchMessage:99 
-04-16 21:33:13.808  1670  4763 V WindowManager: Relayout Window{4d94592 u0 InputMethod}: viewVisibility=8 req=1080x2320 ty=2011 d0
-04-16 21:33:13.808  1670  4763 E WindowManager: win=Window{4d94592 u0 InputMethod} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.WindowManagerService.tryStartExitingAnimation:2980 com.android.server.wm.WindowManagerService.relayoutWindow:2685 com.android.server.wm.Session.relayout:282 android.view.IWindowSession$Stub.onTransact:782 com.android.server.wm.Session.onTransact:204 android.os.Binder.execTransactInternal:1375 android.os.Binder.execTransact:1311 
-04-16 21:33:13.808  1670  4763 I WindowManager: Destroying surface Surface(name=InputMethod$_7919)/@0xb02deb called by com.android.server.wm.WindowStateAnimator.destroySurface:799 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:472 com.android.server.wm.WindowState.destroySurfaceUnchecked:4201 com.android.server.wm.WindowState.destroySurface:4175 com.android.server.wm.WindowManagerService.tryStartExitingAnimation:2980 com.android.server.wm.WindowManagerService.relayoutWindow:2685 com.android.server.wm.Session.relayout:282 android.view.IWindowSession$Stub.onTransact:782 
-04-16 21:33:13.811  1670  4763 D SurfaceControl: restrictHighRefreshRate, enabled=false
-04-16 21:33:13.811  1360  2077 I SurfaceFlinger: HRR : 0
-04-16 21:33:13.813  2428  3215 I ViewRootImpl@6a89f78[StatusBar]: Resizing android.view.ViewRootImpl@4f4a1c8: frame = [0,0][1080,80] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:13.814 17420 17429 I ViewRootImpl@cd32dfb[MainActivity]: Resizing android.view.ViewRootImpl@2c15705: frame = [0,0][1080,2400] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:13.814  2428  3213 I ViewRootImpl@d9e0a6a[ScreenDecorOverlayBottom]: Resizing android.view.ViewRootImpl@a086f46: frame = [0,2320][1080,2400] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:13.814  2924  9771 I ViewRootImpl@ba316a5[CocktailBarService]: Resizing android.view.ViewRootImpl@e66c466: frame = [1013,616][1080,992] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:13.814  2428 26499 I ViewRootImpl@1a85961[ScreenDecorOverlay]: Resizing android.view.ViewRootImpl@9d5e61: frame = [0,0][1080,80] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:13.815  1670  4763 V WindowManager: Relayout hash=4d94592, pid=7919, syncId=-1: mAttrs={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1401b3 preferredMinDisplayRefreshRate=60.0 receive insets ignoring z-order
-04-16 21:33:13.815  1670  4763 V WindowManager:   fl=81800108
-04-16 21:33:13.815  1670  4763 V WindowManager:   pfl=12000000
-04-16 21:33:13.815  1670  4763 V WindowManager:   bhv=DEFAULT
-04-16 21:33:13.815  1670  4763 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS
-04-16 21:33:13.815  1670  4763 V WindowManager:   fitSides=LEFT TOP RIGHT
-04-16 21:33:13.815  1670  4763 V WindowManager:   fitIgnoreVis dimDuration=150 naviIconColor=0}
-04-16 21:33:13.815  2428  3585 I ViewRootImpl@d9e0a6a[ScreenDecorOverlayBottom]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,2320][1080,2400] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:13.815  2428  3585 I ViewRootImpl@1a85961[ScreenDecorOverlay]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][1080,80] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager: Schedule to change allowedModes=baseModeId=3 allowGroupSwitching=false primary=physical: (60.000004 60.000004) render:  (0.0 60.0) appRequest=physical: (60.0 60.0) render:  (0.0 60.0), displayToken=android.os.BinderProxy@170b326  mVotesByDisplay:
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:     -1:
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:       PRIORITY_LOW_POWER_MODE -> Vote: {width: -1, height: -1, refreshRateRanges: physical: (0.0 Infinity) render:  (0.0 60.0), disableRefreshRateSwitching: false, appRequestBaseModeRefreshRate: 0.0}
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:       PRIORITY_REFRESH_RATE_MODE -> Vote: {width: -1, height: -1, refreshRateRanges: physical: (60.0 60.0) render:  (0.0 Infinity), disableRefreshRateSwitching: true, appRequestBaseModeRefreshRate: 0.0}
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:       PRIORITY_USER_SETTING_PEAK_RENDER_FRAME_RATE -> Vote: {width: -1, height: -1, refreshRateRanges: physical: (0.0 Infinity) render:  (0.0 120.0), disableRefreshRateSwitching: false, appRequestBaseModeRefreshRate: 0.0}
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:       PRIORITY_USER_SETTING_MIN_RENDER_FRAME_RATE -> Vote: {width: -1, height: -1, refreshRateRanges: physical: (0.0 Infinity) render:  (0.0 Infinity), disableRefreshRateSwitching: false, appRequestBaseModeRefreshRate: 0.0}
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager: 
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:  mModeSwitchingType: SWITCHING_TYPE_WITHIN_GROUPS mAlwaysRespectAppRequest: false
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:  Current Mode mReportedRefreshRateMode(toSurfaceFlinger)=REFRESH_RATE_MODE_NORMAL, mRefreshRateMode(fromSettings)=REFRESH_RATE_MODE_NORMAL
-04-16 21:33:13.815  1670  1773 I RefreshRateModeManager:  BrightnessState mPassive=false, PassiveModeToken=false, mBrightness=131, mAmbientLux=-1.0
-04-16 21:33:13.815  2924  2924 I ViewRootImpl@ba316a5[CocktailBarService]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[1013,616][1080,992] display=[0,0][1080,2265] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:13.815 17420 17420 I InsetsController: onStateChanged: host=com.ismailjamal.bedrockrelay/com.ismailjamal.bedrockrelay.MainActivity, from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:7196, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 80 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(510, 0 - 570, 80), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={3.0} cutoutSpec={M 0,0 H -10 V 26.66666666666667 H 10 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 80) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2400 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {b8db0000 mType=statusBars mFrame=[0,0][1080,80] mVisible=true mFlags=[]}, InsetsSource: {b8db0005 mType=mandatorySystemGestures mFrame=[0,0][1080,114] mVisible=true mFlags=[]}, InsetsSource: {b8db0006 mType=tappableElement mFrame=[0,0][1080,80] mVisible=true mFlags=[]}, InsetsSource: {e0970001 mType=navigationBars mFrame=[0,2265][1080,2400] mVisible=true mFlags=[]}, InsetsSource: {e0970004 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {e0970005 mType=mandatorySystemGestures mFrame=[0,2265][1080,2400] mVisible=true mFlags=[]}, InsetsSource: {e0970006 mType=tappableElement mFrame=[0,2265][1080,2400] mVisible=true mFlags=[]}, InsetsSource: {e0970024 mType=systemGestures mFrame=[0,0][0,0] mVisible=true mFlags=[]}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mVisible=false mFlags=[]}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,80] mVisible=true mFlags=[]} }
-04-16 21:33:13.815 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][1080,2400] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:13.816  2428  2439 I ViewRootImpl@3b6baee[NavigationBar0]: Resizing android.view.ViewRootImpl@e240261: frame = [0,2265][1080,2400] reportDraw = false forceLayout = false syncSeqId = -1
-04-16 21:33:13.816  2428  2428 I ViewRootImpl@6a89f78[StatusBar]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][1080,80] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:13.816  2428  2428 I ViewRootImpl@3b6baee[NavigationBar0]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,2265][1080,2400] display=[0,0][1080,2400] parentFrame=[0,0][0,0]} forceNextWindowRelayout=false displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false
-04-16 21:33:13.816  1670  1773 D LocalDisplayAdapter: setDesiredDisplayModeSpecsAsync : defaultMode=2 allowGroupSwitching=false primaryRanges=physical: (60.000004 60.000004) render:  (0.0 60.0) appRequestRanges=physical: (60.0 60.0) render:  (0.0 60.0)
-04-16 21:33:13.817  1360  1360 I RefreshRateSelector: Display 4633128672291735937 policy changed
-04-16 21:33:13.817  1360  1360 I RefreshRateSelector: Previous: {defaultModeId=2, allowGroupSwitching=false, primaryRanges={physical=[60.00 Hz, 60.00 Hz], render=[60.00 Hz, 60.00 Hz]}, appRequestRanges={physical=[60.00 Hz, 60.00 Hz], render=[60.00 Hz, 60.00 Hz]}}
-04-16 21:33:13.817  1360  1360 I RefreshRateSelector: Current:  DisplayManagerPolicy{defaultModeId=2, allowGroupSwitching=false, primaryRanges={physical=[60.00 Hz, 60.00 Hz], render=[0.00 Hz, 60.00 Hz]}, appRequestRanges={physical=[60.00 Hz, 60.00 Hz], render=[0.00 Hz, 60.00 Hz]}}
-04-16 21:33:13.817  1360  1360 I RefreshRateSelector: 0 mode changes were performed under the previous policy
-04-16 21:33:13.817  1360  1360 I SurfaceFlinger: [4633128672291735937] Setting desired display mode specs: {defaultModeId=2, allowGroupSwitching=false, primaryRanges={physical=[60.00 Hz, 60.00 Hz], render=[0.00 Hz, 60.00 Hz]}, appRequestRanges={physical=[60.00 Hz, 60.00 Hz], render=[0.00 Hz, 60.00 Hz]}}
-04-16 21:33:13.817  7919  7919 I ViewRootImpl@7b83c94[InputMethod]: Relayout returned: old=(0,80,1080,2400) new=(0,80,1080,2400) relayoutAsync=false req=(1080,2320)8 dur=9 res=0x2 s={false 0x0} ch=true seqId=0
-04-16 21:33:13.818  1360  1360 I Layer   : id=19211 removeFromCurrentState InputMethod$_7919#19211 (133)
-04-16 21:33:13.818  1360  1360 I SurfaceFlinger: id=19211 Removed InputMethod$_7919#19211 (133)
-04-16 21:33:13.835  1360  1360 I Layer   : id=19211 Destroyed InputMethod$_7919#19211
-04-16 21:33:13.951  4443  8313 I HDM.SodaTrigFrontend: (REDACTED) appOpsListener %s %s
-04-16 21:33:13.952  4443  8313 I HDM.SodaTrigFrontend: (REDACTED) Ignoring irrelevant audio permission changes for package %s
-04-16 21:33:14.102  4559  4559 I SDHMS:LOAD: type: LoadsFreqs, value: 0:34:3:893099:2080000:533000:1090959:2080000:533000:65:130:0
-04-16 21:33:14.147   675   675 D io_stats: !@   8,0 r 6364118 159486896 w 2374295 32666572 d 696923 36177036 f 0 0 iot 3534052 0 th 0 0 0 pt 0 inp 0 0 66917.620
-04-16 21:33:14.147   675   675 D io_stats: !@ Read_top(KB): roid.honeyboard(7919) 924 loop8(791) 184
-04-16 21:33:14.147   675   675 D io_stats: !@ Write_top(KB): roid.honeyboard(7919) 2844 kworker/u16:1(14541) 132 id.diagmonagent(4517) 104
-04-16 21:33:14.200  1670  2042 D InputReader: Btn_touch(8): value=1 when=66917.672523
-04-16 21:33:14.200  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.12968 ] when=66917.672523
-04-16 21:33:14.202  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
-04-16 21:33:14.202  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x0, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:14.203  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=66917672
-04-16 21:33:14.203 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
-04-16 21:33:14.204  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 152428675 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:14.204  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 152428675 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:14.206  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 704734833
-04-16 21:33:14.206  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 704734833
-04-16 21:33:14.206  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
-04-16 21:33:14.206  2428  2428 D SearcleGestureHandler: allowGesture: false
-04-16 21:33:14.246  1670  2042 D InputReader: Btn_touch(8): value=0 when=66917.719962
-04-16 21:33:14.246  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=66917.719962
-04-16 21:33:14.247  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x1, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:14.248 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
-04-16 21:33:14.250 17420 17420 D PhantomViewModel: Sending stop command to service
-04-16 21:33:14.250 17420 17420 D PhantomViewModel: UI LOG: Sending stop command to proxy service
-04-16 21:33:14.253 17420 17420 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
-04-16 21:33:14.260 17420 17420 D PhantomService: Service onStartCommand received - Action: STOP
-04-16 21:33:14.262  1670  4763 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10381; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:1; bindFromPackage:null: isBindService:false]
-04-16 21:33:14.263  2428  2439 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:14.265  2428  2439 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
-04-16 21:33:14.265 17420 17420 I PhantomService: Received STOP action.
-04-16 21:33:14.265  2428  2439 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
-04-16 21:33:14.265 17420 17420 D PhantomService: SERVICE LOG: Received STOP command.
-04-16 21:33:14.265 17420 17420 I PhantomService: Stopping process and service.
-04-16 21:33:14.266 17420 17460 D PhantomService: Stop command issued, but process was not running.
-04-16 21:33:14.268  2428 26499 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:14.268  2428 26499 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
-04-16 21:33:14.285  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10381, reason = 8
-04-16 21:33:14.285  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
-04-16 21:33:14.336  2840  3426 D ScanFilter: manu data matches
-04-16 21:33:14.336  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-68, periodicAdvInt=0x0
-04-16 21:33:14.338  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
-04-16 21:33:14.468  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
-04-16 21:33:14.468  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10381
-04-16 21:33:14.504  1670  1771 I GestureDetector: handleMessage TAP
-04-16 21:33:14.504  1670  1670 I GestureDetector: handleMessage TAP
-04-16 21:33:14.766  1670  2042 D InputReader: Btn_touch(8): value=1 when=66918.239075
-04-16 21:33:14.766  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.12969 ] when=66918.239075
-04-16 21:33:14.767  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
-04-16 21:33:14.767  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x0, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:14.767 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
-04-16 21:33:14.768  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
-04-16 21:33:14.768  2428  2428 D SearcleGestureHandler: allowGesture: false
-04-16 21:33:14.768  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 742564215 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:14.769  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 742564215 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:14.774  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 914116362
-04-16 21:33:14.774  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 914116362
-04-16 21:33:14.882  1670  2042 D InputReader: Btn_touch(8): value=0 when=66918.355310
-04-16 21:33:14.882  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=66918.355310
-04-16 21:33:14.882  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x1, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:14.884 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
-04-16 21:33:14.885 17420 17420 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
-04-16 21:33:14.885 17420 17420 D PhantomViewModel: UI LOG: Attempting to start proxy...
-04-16 21:33:14.885 17420 17420 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
-04-16 21:33:14.887  1670  4763 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10381; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:2; bindFromPackage:null: isBindService:false]
-04-16 21:33:14.888 17420 17420 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
-04-16 21:33:14.973 17420 17420 D PhantomService: Service onStartCommand received - Action: null
-04-16 21:33:14.976  2428  2439 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:14.977  2428  2439 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
-04-16 21:33:14.977  2428  2439 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
-04-16 21:33:14.977 17420 17420 I PhantomService: Processing START command.
-04-16 21:33:14.977 17420 17420 D PhantomService: SERVICE LOG: Received start request:
-04-16 21:33:14.977 17420 17420 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
-04-16 21:33:14.979 17420 17569 D PhantomRepository: Entering getBinaryFile
-04-16 21:33:14.979 17420 17569 E PhantomRepository: Binary file does not exist at: /data/app/~~jBUBDSNdL8sWH59CQf3hDQ==/com.ismailjamal.bedrockrelay-WJqpRj5DOAHgGzNfQKaOcQ==/lib/arm64/libphantom.so
-04-16 21:33:14.979 17420 17569 E PhantomService: Failed to get binary file from repository
-04-16 21:33:14.979 17420 17569 E PhantomService: java.lang.RuntimeException: Binary file is missing: /data/app/~~jBUBDSNdL8sWH59CQf3hDQ==/com.ismailjamal.bedrockrelay-WJqpRj5DOAHgGzNfQKaOcQ==/lib/arm64/libphantom.so
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:68)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
-04-16 21:33:14.979 17420 17569 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
-04-16 21:33:14.979 17420 17569 D PhantomService: SERVICE LOG: Error: Failed to get binary file: Binary file is missing: /data/app/~~jBUBDSNdL8sWH59CQf3hDQ==/com.ismailjamal.bedrockrelay-WJqpRj5DOAHgGzNfQKaOcQ==/lib/arm64/libphantom.so
-04-16 21:33:14.980 17420 17569 I PhantomService: Stopping process and service.
-04-16 21:33:14.980 17420 17420 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
-04-16 21:33:14.980 17420 17459 D PhantomService: Stop command issued, but process was not running.
-04-16 21:33:14.981  2428  2439 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:14.981  2428  2439 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
-04-16 21:33:14.982 17420 17420 D PhantomService: Notification updated: Proxy running...
-04-16 21:33:14.983 17420 17569 D PhantomService: Process coroutine finished.
-04-16 21:33:14.998  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10381, reason = 8
-04-16 21:33:14.998  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
-04-16 21:33:15.068  1670  1771 I GestureDetector: handleMessage TAP
-04-16 21:33:15.069  1670  1670 I GestureDetector: handleMessage TAP
-04-16 21:33:15.076 24637 24637 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
-04-16 21:33:15.076 24637 24637 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
-04-16 21:33:15.179  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
-04-16 21:33:15.179  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10381
-04-16 21:33:15.183  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
-04-16 21:33:15.183  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10381
-04-16 21:33:15.259  2428  2428 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
-04-16 21:33:15.334  1670  2042 D InputReader: Btn_touch(8): value=1 when=66918.807505
-04-16 21:33:15.335  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.12970 ] when=66918.807505
-04-16 21:33:15.335  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
-04-16 21:33:15.335  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x0, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:15.336  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=66918807
-04-16 21:33:15.336 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
-04-16 21:33:15.336  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 30433495 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:15.336  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 30433495 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:15.337  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
-04-16 21:33:15.337  2428  2428 D SearcleGestureHandler: allowGesture: false
-04-16 21:33:15.360  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1051945903
-04-16 21:33:15.360  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1051945903
-04-16 21:33:15.425  1670  2042 D InputReader: Btn_touch(8): value=0 when=66918.898756
-04-16 21:33:15.425  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=66918.898756
-04-16 21:33:15.425  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x1, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:15.427 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
-04-16 21:33:15.428 17420 17420 D PhantomViewModel: Sending stop command to service
-04-16 21:33:15.428 17420 17420 D PhantomViewModel: UI LOG: Sending stop command to proxy service
-04-16 21:33:15.430 17420 17420 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
-04-16 21:33:15.438 17420 17420 D PhantomService: Service onStartCommand received - Action: STOP
-04-16 21:33:15.440  1670  1700 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10381; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:3; bindFromPackage:null: isBindService:false]
-04-16 21:33:15.440  2428  2439 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:15.441 17420 17420 I PhantomService: Received STOP action.
-04-16 21:33:15.441 17420 17420 D PhantomService: SERVICE LOG: Received STOP command.
-04-16 21:33:15.441  2428  2439 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
-04-16 21:33:15.441  2428  2439 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
-04-16 21:33:15.441 17420 17420 I PhantomService: Stopping process and service.
-04-16 21:33:15.442 17420 17568 D PhantomService: Stop command issued, but process was not running.
-04-16 21:33:15.443  2428  2439 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@ea3dd96]:[userId:0]
-04-16 21:33:15.443  2428  2439 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
-04-16 21:33:15.466  1670  1670 D NotificationService: CancelNotificationRunnable end r = 0|com.ismailjamal.bedrockrelay|1|null|10381, reason = 8
-04-16 21:33:15.466  1670  1670 D SmartAlertController: SmartAlert - Found Missed Event
-04-16 21:33:15.636  1670  1771 I GestureDetector: handleMessage TAP
-04-16 21:33:15.636  1670  1670 I GestureDetector: handleMessage TAP
-04-16 21:33:15.646  1670  1670 I Telecom:SamsungTelecomServiceImpl: isInManagedCall - callingPackage : android / callingUser : UserHandle{0} / hasCrossUserAccess : true
-04-16 21:33:15.646  1670  1670 I NotificationService: Cannot find enqueued record for key: 0|com.ismailjamal.bedrockrelay|1|null|10381
-04-16 21:33:15.735 18686 18686 D gpsd    : CALL_SENTRY(main()): GlEngine::OnResourceRelease took 250 ms (from 123819783 to 123820033) (logOverhead=0,0,0,0,0,0,0), start: 21:33:15.485
-04-16 21:33:15.806  1670  4087 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 9791, isSameBssidAndFreq true
-04-16 21:33:15.911  1670  2042 D InputReader: Btn_touch(8): value=1 when=66919.383806
-04-16 21:33:15.911  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.12971 ] when=66919.383806
-04-16 21:33:15.912  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
-04-16 21:33:15.912  1670  2041 I InputDispatcher: Delivering touch to (17420): action: 0x0, f=0x0, d=0, '8314d4 ', t=1 
-04-16 21:33:15.912  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
-04-16 21:33:15.912  2428  2428 D SearcleGestureHandler: allowGesture: false
-04-16 21:33:15.913 17420 17420 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
-04-16 21:33:15.913  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 88001907 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:15.913  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 88001907 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
-04-16 21:33:15.919  2584  2584 I wpa_supplicant: Heartbeat 6609
-04-16 21:33:15.928  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1022237092
-04-16 21:33:15.928  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 1022237092
+04-17 11:09:08.182  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=78168419
+04-17 11:09:08.183 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:08.183  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:08.184  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:08.185  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 328295680 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:08.185  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 328295680 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:08.188  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 855839635
+04-17 11:09:08.188  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 855839635
+04-17 11:09:08.242  1670  2042 D InputReader: Btn_touch(8): value=0 when=78168.483251
+04-17 11:09:08.242  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78168.483251
+04-17 11:09:08.243  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:08.244 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:08.246 31229 31229 D PhantomViewModel: Sending stop command to service
+04-17 11:09:08.246 31229 31229 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-17 11:09:08.249 31229 31229 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-17 11:09:08.257 31229 31229 D PhantomService: Service onStartCommand received - Action: STOP
+04-17 11:09:08.260  1670  2680 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:5; bindFromPackage:null: isBindService:false]
+04-17 11:09:08.261  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:08.262 31229 31229 I PhantomService: Received STOP action.
+04-17 11:09:08.262 31229 31229 D PhantomService: SERVICE LOG: Received STOP command.
+04-17 11:09:08.262 31229 31229 I PhantomService: Stopping process and service.
+04-17 11:09:08.263 31229 31287 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:08.264  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:08.264  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:08.264  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:08.264  2428 27011 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:08.265  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:08.265  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:08.265  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:08.367   675   675 D io_stats: !@   8,0 r 7285101 181137672 w 2724613 36516028 d 795539 39395012 f 0 0 iot 4107256 0 th 0 0 0 pt 0 inp 0 0 78168.607
+04-17 11:09:08.368   675   675 D io_stats: !@ Read_top(KB): ung.android.fmm(4248) 40 system_server(1670) 36 c.android.sdhms(4559) 20
+04-17 11:09:08.368   675   675 D io_stats: !@ Write_top(KB): kworker/u16:18(27220) 64 soft.appmanager(26887) 16 system_server(1670) 4
+04-17 11:09:08.484  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:08.484  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:08.760  1670  3335 D FreecessController: com.ismailjamal.bedrockrelay(10387) is important[12]
+04-17 11:09:08.869  1670  2000 W ProcessStats: Tracking association SourceState{45159ff com.samsung.android.smartsuggestions:core/10114 BFgs #306648} whose proc state 4 is better than process ProcessState{74e3636 com.samsung.android.smartsuggestions:contentmanagement/10114 pkg=com.samsung.android.smartsuggestions} proc state 6 (16 skipped)
+04-17 11:09:08.938  2428  2428 D StatusBarIconController: ignoring old pipeline callbacks, because the new mobile icons are enabled
+04-17 11:09:09.019  1670  2042 D InputReader: Btn_touch(8): value=1 when=78169.259170
+04-17 11:09:09.019  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13669 ] when=78169.259170
+04-17 11:09:09.019  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:09.019  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:09.020 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:09.020  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:09.020  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:09.021  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 1054621284 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:09.021  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 1054621284 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:09.035  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 322280559
+04-17 11:09:09.035  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 322280559
+04-17 11:09:09.110  1670  2042 D InputReader: Btn_touch(8): value=0 when=78169.350762
+04-17 11:09:09.110  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78169.350762
+04-17 11:09:09.110  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:09.111 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:09.112 31229 31229 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-17 11:09:09.112 31229 31229 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-17 11:09:09.112 31229 31229 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-17 11:09:09.114  1670  4853 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:6; bindFromPackage:null: isBindService:false]
+04-17 11:09:09.115 31229 31229 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-17 11:09:09.121 31229 31229 D PhantomService: Service onStartCommand received - Action: null
+04-17 11:09:09.123  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:09.125 31229 31229 I PhantomService: Processing START command.
+04-17 11:09:09.125 31229 31229 D PhantomService: SERVICE LOG: Received start request:
+04-17 11:09:09.125  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:09.125  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:09.125  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:09.125 31229 31229 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-17 11:09:09.126 31229 31286 D PhantomRepository: Entering getBinaryFile
+04-17 11:09:09.126 31229 31286 D PhantomRepository: Checking for binary at: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:09.126 31229 31286 E PhantomRepository: Binary libphantom.so not found at expected location: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:09.126 31229 31286 D PhantomRepository: --- Directory Tree Dump ---
+04-17 11:09:09.126 31229 31286 D PhantomRepository: Attempting to log native library directory structure:
+04-17 11:09:09.126 31229 31286 D PhantomRepository: nativeLibDir: arm64/
+04-17 11:09:09.126 31229 31286 D PhantomRepository: nativeLibDir:   [Directory is empty]
+04-17 11:09:09.126 31229 31286 D PhantomRepository: Parent directory structure:
+04-17 11:09:09.127 31229 31286 D PhantomRepository: baseLibDir: lib/
+04-17 11:09:09.127 31229 31286 D PhantomRepository: baseLibDir: └── arm64/
+04-17 11:09:09.127 31229 31286 D PhantomRepository: baseLibDir:     arm64/
+04-17 11:09:09.127 31229 31286 D PhantomRepository: baseLibDir:       [Directory is empty]
+04-17 11:09:09.127 31229 31286 D PhantomRepository: --- End Directory Tree Dump ---
+04-17 11:09:09.127 31229 31286 E PhantomService: Failed to get binary file from repository
+04-17 11:09:09.127 31229 31286 E PhantomService: java.lang.RuntimeException: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:100)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-17 11:09:09.127 31229 31286 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-17 11:09:09.127 31229 31229 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-17 11:09:09.128 31229 31286 D PhantomService: SERVICE LOG: Error: Failed to get binary file: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:09.129 31229 31286 I PhantomService: Stopping process and service.
+04-17 11:09:09.129  1670  1701 E NotificationService: isPkgBlocked = true
+04-17 11:09:09.129  1670  1701 E NotificationService: isRecordBlocked = false
+04-17 11:09:09.129  1670  1701 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:09.129 31229 31343 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:09.130 31229 31229 D PhantomService: Notification updated: Proxy running...
+04-17 11:09:09.130  2428 27011 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:09.131  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:09.131  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:09.131  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:09.133 31229 31286 D PhantomService: Process coroutine finished.
+04-17 11:09:09.144  1670  3335 D FreecessController: com.sec.android.app.shealth(10318) is important[fg-service]
+04-17 11:09:09.320  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:09.321  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:09.335  2840  3426 D ScanFilter: manu data matches
+04-17 11:09:09.335  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-54, periodicAdvInt=0x0
+04-17 11:09:09.338  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-17 11:09:09.838  1670  2042 D InputReader: Btn_touch(8): value=1 when=78170.078449
+04-17 11:09:09.839  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13670 ] when=78170.078449
+04-17 11:09:09.841  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:09.841  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:09.841  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=78170078
+04-17 11:09:09.841 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:09.842  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:09.842  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:09.842  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 908886171 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:09.842  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 908886171 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:09.845  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 181668353
+04-17 11:09:09.845  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 181668353
+04-17 11:09:09.850  1670  4087 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 10934, isSameBssidAndFreq true
+04-17 11:09:09.936  1670  2042 D InputReader: Btn_touch(8): value=0 when=78170.176709
+04-17 11:09:09.936  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78170.176709
+04-17 11:09:09.936  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:09.938 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:09.939 31229 31229 D PhantomViewModel: Sending stop command to service
+04-17 11:09:09.939 31229 31229 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-17 11:09:09.941 31229 31229 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-17 11:09:09.947 31229 31229 D PhantomService: Service onStartCommand received - Action: STOP
+04-17 11:09:09.949  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:7; bindFromPackage:null: isBindService:false]
+04-17 11:09:09.950  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:09.952 31229 31229 I PhantomService: Received STOP action.
+04-17 11:09:09.952 31229 31229 D PhantomService: SERVICE LOG: Received STOP command.
+04-17 11:09:09.952  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:09.952  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:09.952  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:09.952 31229 31229 I PhantomService: Stopping process and service.
+04-17 11:09:09.953 31229 31344 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:09.954  2428  3215 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:09.954  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:09.954  2428  3215 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:09.954  2428  3215 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:10.142  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:10.142  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:10.369   675   675 D io_stats: !@   8,0 r 7285110 181137736 w 2724613 36516028 d 795539 39395012 f 0 0 iot 4107264 0 th 0 0 0 pt 0 inp 0 0 78170.609
+04-17 11:09:10.964  1670  2042 D InputReader: Btn_touch(8): value=1 when=78171.204230
+04-17 11:09:10.964  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13671 ] when=78171.204230
+04-17 11:09:10.965  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:10.965  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:10.965  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=78171204
+04-17 11:09:10.965  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:10.965  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:10.966 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:10.967  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 943893135 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:10.967  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 943893135 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:10.988  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 840441702
+04-17 11:09:10.988  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 840441702
+04-17 11:09:11.062  1670  2042 D InputReader: Btn_touch(8): value=0 when=78171.303085
+04-17 11:09:11.062  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78171.303085
+04-17 11:09:11.062  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:11.063 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:11.064 31229 31229 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-17 11:09:11.064 31229 31229 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-17 11:09:11.064 31229 31229 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-17 11:09:11.066  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:8; bindFromPackage:null: isBindService:false]
+04-17 11:09:11.068 31229 31229 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-17 11:09:11.075 31229 31229 D PhantomService: Service onStartCommand received - Action: null
+04-17 11:09:11.078  2428  4667 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:11.079  2428  4667 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:11.079  2428  4667 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:11.080  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:11.080  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:11.080  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:11.087 31229 31229 I PhantomService: Processing START command.
+04-17 11:09:11.087 31229 31229 D PhantomService: SERVICE LOG: Received start request:
+04-17 11:09:11.088 31229 31229 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-17 11:09:11.089 31229 31288 D PhantomRepository: Entering getBinaryFile
+04-17 11:09:11.089 31229 31288 D PhantomRepository: Checking for binary at: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:11.089 31229 31288 E PhantomRepository: Binary libphantom.so not found at expected location: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:11.089 31229 31288 D PhantomRepository: --- Directory Tree Dump ---
+04-17 11:09:11.089 31229 31288 D PhantomRepository: Attempting to log native library directory structure:
+04-17 11:09:11.089 31229 31288 D PhantomRepository: nativeLibDir: arm64/
+04-17 11:09:11.089 31229 31288 D PhantomRepository: nativeLibDir:   [Directory is empty]
+04-17 11:09:11.089 31229 31288 D PhantomRepository: Parent directory structure:
+04-17 11:09:11.089 31229 31288 D PhantomRepository: baseLibDir: lib/
+04-17 11:09:11.090 31229 31288 D PhantomRepository: baseLibDir: └── arm64/
+04-17 11:09:11.090 31229 31288 D PhantomRepository: baseLibDir:     arm64/
+04-17 11:09:11.090 31229 31288 D PhantomRepository: baseLibDir:       [Directory is empty]
+04-17 11:09:11.090 31229 31288 D PhantomRepository: --- End Directory Tree Dump ---
+04-17 11:09:11.090 31229 31288 E PhantomService: Failed to get binary file from repository
+04-17 11:09:11.090 31229 31288 E PhantomService: java.lang.RuntimeException: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:100)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-17 11:09:11.090 31229 31288 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-17 11:09:11.090 31229 31288 D PhantomService: SERVICE LOG: Error: Failed to get binary file: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:11.090 31229 31288 I PhantomService: Stopping process and service.
+04-17 11:09:11.091 31229 31343 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:11.092  2428  4667 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:11.092  2428  4667 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:11.092 31229 31229 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-17 11:09:11.094  1670  4853 E NotificationService: isPkgBlocked = true
+04-17 11:09:11.094  1670  4853 E NotificationService: isRecordBlocked = false
+04-17 11:09:11.094  1670  4853 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:11.094 31229 31229 D PhantomService: Notification updated: Proxy running...
+04-17 11:09:11.095 31229 31288 D PhantomService: Process coroutine finished.
+04-17 11:09:11.155  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x13, addressType=1, address=XX:XX:XX:XX:5E:C7, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-82, periodicAdvInt=0x0
+04-17 11:09:11.155  2840  3068 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_reassembler.cc:56 ProcessAdvertisingReport: Ignoring scan response received without advertising event
+04-17 11:09:11.155  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x13, addressType=1, address=XX:XX:XX:XX:5E:C7, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-82, periodicAdvInt=0x0
+04-17 11:09:11.158  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: TagKeyManager.findCloudId - key: ($)9e5716d2
+04-17 11:09:11.158  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: TagKeyManager.findCloudId - key: ($)9e5716d2
+04-17 11:09:11.158  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForTag.parsePacket - [name][bleMac]($)6C:27[tagState]5[advertisementType]0[privacyId]078c1ea905c78941[uWBFlag]0[batteryLevel]3[motionDetection]0[lastReceivedTime]1744884551158[rssi]-82[activityTrackingMode]false
+04-17 11:09:11.163  7147 27991 I [+0100]oneconnect[1.8.21.28_01][CORE]: SmartTag@DeviceStatusTriggerTaskImpl.isAvailableGattConnection - deviceId: ($)9e5716d2 | isAvailableGattConnection: false | priorityConnectionSize : 0 | availableConnectionSize : 2
+04-17 11:09:11.186  2840  3426 D ScanFilter: manu data matches
+04-17 11:09:11.186  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-66, periodicAdvInt=0x0
+04-17 11:09:11.187  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-17 11:09:11.267  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:11.267  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:12.169  1336  1513 I EDEN    : [Exynos][EDEN][v1.6.23][SERVICE] processAliveMointorMain:253: Try to check pid=(1282)...
+04-17 11:09:12.373   675   675 D io_stats: !@ Read_top(KB): earchbox:search(21539) 64
+04-17 11:09:12.383  1670  2042 D InputReader: Btn_touch(8): value=1 when=78172.623490
+04-17 11:09:12.384  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13672 ] when=78172.623490
+04-17 11:09:12.385  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:12.386  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:12.386  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=78172623
+04-17 11:09:12.386  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:12.387  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:12.387 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:12.388  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 580930068 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:12.388  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 580930068 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:12.398  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 851525108
+04-17 11:09:12.398  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 851525108
+04-17 11:09:12.480  1670  2042 D InputReader: Btn_touch(8): value=0 when=78172.720994
+04-17 11:09:12.480  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78172.720994
+04-17 11:09:12.480  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:12.482 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:12.483 31229 31229 D PhantomViewModel: Sending stop command to service
+04-17 11:09:12.483 31229 31229 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-17 11:09:12.486 31229 31229 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-17 11:09:12.493 31229 31229 D PhantomService: Service onStartCommand received - Action: STOP
+04-17 11:09:12.494  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:9; bindFromPackage:null: isBindService:false]
+04-17 11:09:12.495  2428  4667 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:12.497 31229 31229 I PhantomService: Received STOP action.
+04-17 11:09:12.497 31229 31229 D PhantomService: SERVICE LOG: Received STOP command.
+04-17 11:09:12.497  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:12.497  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:12.497  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:12.497 31229 31229 I PhantomService: Stopping process and service.
+04-17 11:09:12.498 31229 31287 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:12.499  2428  4667 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:12.499  2428  4667 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:12.499  2428  4667 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:12.499  2428  4667 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:12.688  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:12.688  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:12.963  1670  4087 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 10935, isSameBssidAndFreq true
+04-17 11:09:13.032  1670  2042 D InputReader: Btn_touch(8): value=1 when=78173.272265
+04-17 11:09:13.032  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13673 ] when=78173.272265
+04-17 11:09:13.033  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:13.033  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:13.033  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:13.034  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:13.034 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:13.034  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 792010614 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:13.034  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 792010614 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:13.040  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 488283601
+04-17 11:09:13.040  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 488283601
+04-17 11:09:13.041  2840  3426 D ScanFilter: manu data matches
+04-17 11:09:13.041  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-63, periodicAdvInt=0x0
+04-17 11:09:13.044  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-17 11:09:13.131  1670  2042 D InputReader: Btn_touch(8): value=0 when=78173.371866
+04-17 11:09:13.131  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78173.371866
+04-17 11:09:13.131  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:13.131 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:13.133 31229 31229 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-17 11:09:13.133 31229 31229 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-17 11:09:13.133 31229 31229 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-17 11:09:13.135  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:10; bindFromPackage:null: isBindService:false]
+04-17 11:09:13.135  2840  3068 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_reassembler.cc:56 ProcessAdvertisingReport: Ignoring scan response received without advertising event
+04-17 11:09:13.136  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x13, addressType=1, address=XX:XX:XX:XX:5E:C7, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-83, periodicAdvInt=0x0
+04-17 11:09:13.136  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 3- eventType=0x13, addressType=1, address=XX:XX:XX:XX:5E:C7, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-83, periodicAdvInt=0x0
+04-17 11:09:13.136 31229 31229 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-17 11:09:13.140  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: TagKeyManager.findCloudId - key: ($)9e5716d2
+04-17 11:09:13.140  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: TagKeyManager.findCloudId - key: ($)9e5716d2
+04-17 11:09:13.141  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForTag.parsePacket - [name][bleMac]($)6C:27[tagState]5[advertisementType]0[privacyId]078c1ea905c78941[uWBFlag]0[batteryLevel]3[motionDetection]0[lastReceivedTime]1744884553140[rssi]-83[activityTrackingMode]false
+04-17 11:09:13.144 31229 31229 D PhantomService: Service onStartCommand received - Action: null
+04-17 11:09:13.147  7147 25301 I [+0100]oneconnect[1.8.21.28_01][CORE]: SmartTag@DeviceStatusTriggerTaskImpl.isAvailableGattConnection - deviceId: ($)9e5716d2 | isAvailableGattConnection: false | priorityConnectionSize : 0 | availableConnectionSize : 2
+04-17 11:09:13.148  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:13.149  2428 27011 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:13.149  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:13.149 31229 31229 I PhantomService: Processing START command.
+04-17 11:09:13.149  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:13.149  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:13.150  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:13.150 31229 31229 D PhantomService: SERVICE LOG: Received start request:
+04-17 11:09:13.150 31229 31229 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-17 11:09:13.151 31229 31343 D PhantomRepository: Entering getBinaryFile
+04-17 11:09:13.151 31229 31343 D PhantomRepository: Checking for binary at: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:13.151 31229 31343 E PhantomRepository: Binary libphantom.so not found at expected location: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:13.151 31229 31343 D PhantomRepository: --- Directory Tree Dump ---
+04-17 11:09:13.151 31229 31343 D PhantomRepository: Attempting to log native library directory structure:
+04-17 11:09:13.151 31229 31343 D PhantomRepository: nativeLibDir: arm64/
+04-17 11:09:13.151 31229 31343 D PhantomRepository: nativeLibDir:   [Directory is empty]
+04-17 11:09:13.151 31229 31343 D PhantomRepository: Parent directory structure:
+04-17 11:09:13.151 31229 31343 D PhantomRepository: baseLibDir: lib/
+04-17 11:09:13.152 31229 31343 D PhantomRepository: baseLibDir: └── arm64/
+04-17 11:09:13.152 31229 31343 D PhantomRepository: baseLibDir:     arm64/
+04-17 11:09:13.152 31229 31343 D PhantomRepository: baseLibDir:       [Directory is empty]
+04-17 11:09:13.152 31229 31343 D PhantomRepository: --- End Directory Tree Dump ---
+04-17 11:09:13.152 31229 31343 E PhantomService: Failed to get binary file from repository
+04-17 11:09:13.152 31229 31343 E PhantomService: java.lang.RuntimeException: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:100)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-17 11:09:13.152 31229 31343 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-17 11:09:13.152 31229 31343 D PhantomService: SERVICE LOG: Error: Failed to get binary file: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:13.152 31229 31343 I PhantomService: Stopping process and service.
+04-17 11:09:13.153 31229 31229 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-17 11:09:13.153 31229 31288 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:13.155  1670  2680 E NotificationService: isPkgBlocked = true
+04-17 11:09:13.155  1670  2680 E NotificationService: isRecordBlocked = false
+04-17 11:09:13.155  1670  2680 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:13.155 31229 31229 D PhantomService: Notification updated: Proxy running...
+04-17 11:09:13.156  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:13.156  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:13.158 31229 31343 D PhantomService: Process coroutine finished.
+04-17 11:09:13.159  2584  2584 I wpa_supplicant: Heartbeat 7700
+04-17 11:09:13.335  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:13.335  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:13.737  4559  4559 I SDHMS:LOAD: type: LoadsFreqs, value: 0:24:4:927160:2080000:533000:1026219:2080000:533000:65:130:0
+04-17 11:09:13.767  1670  3335 D FreecessController: com.ismailjamal.bedrockrelay(10387) is important[12]
+04-17 11:09:14.145  1670  3335 D FreecessController: com.sec.android.app.shealth(10318) is important[fg-service]
+04-17 11:09:14.374   675   675 D io_stats: !@   8,0 r 7285113 181137788 w 2724617 36516172 d 795539 39395012 f 0 0 iot 4107272 0 th 0 0 0 pt 0 inp 0 0 78174.615
+04-17 11:09:14.468  1670  2042 D InputReader: Btn_touch(8): value=1 when=78174.708466
+04-17 11:09:14.469  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13674 ] when=78174.708466
+04-17 11:09:14.470  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:14.470  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:14.471  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=78174708
+04-17 11:09:14.471  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:14.471  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:14.472 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:14.473  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 716724328 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:14.473  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 716724328 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:14.475  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 224968798
+04-17 11:09:14.476  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 224968798
+04-17 11:09:14.557  1670  2042 D InputReader: Btn_touch(8): value=0 when=78174.798537
+04-17 11:09:14.558  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78174.798537
+04-17 11:09:14.558  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:14.559 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:14.560 31229 31229 D PhantomViewModel: Sending stop command to service
+04-17 11:09:14.560 31229 31229 D PhantomViewModel: UI LOG: Sending stop command to proxy service
+04-17 11:09:14.563 31229 31229 D PhantomViewModel: UI LOG: Proxy stop command sent successfully.
+04-17 11:09:14.569 31229 31229 D PhantomService: Service onStartCommand received - Action: STOP
+04-17 11:09:14.571  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=STOP cmp=com.ismailjamal.bedrockrelay/.PhantomService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:11; bindFromPackage:null: isBindService:false]
+04-17 11:09:14.572  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:14.573 31229 31229 I PhantomService: Received STOP action.
+04-17 11:09:14.573 31229 31229 D PhantomService: SERVICE LOG: Received STOP command.
+04-17 11:09:14.573  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:14.573  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:14.573  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:14.573 31229 31229 I PhantomService: Stopping process and service.
+04-17 11:09:14.574 31229 31287 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:14.576  2428 27011 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:14.576  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:14.576  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:14.576  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:14.773  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:14.773  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:14.905  2840  3426 D ScanFilter: manu data matches
+04-17 11:09:14.905  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-55, periodicAdvInt=0x0
+04-17 11:09:14.908  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-17 11:09:15.294  1670  2042 D InputReader: Btn_touch(8): value=1 when=78175.534494
+04-17 11:09:15.295  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13675 ] when=78175.534494
+04-17 11:09:15.297  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:15.297  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:15.298  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:15.298  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:15.298 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:15.299  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 444940885 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:15.299  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 444940885 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:15.310  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 417161390
+04-17 11:09:15.310  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 417161390
+04-17 11:09:15.401  1670  2042 D InputReader: Btn_touch(8): value=0 when=78175.641378
+04-17 11:09:15.401  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78175.641378
+04-17 11:09:15.401  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:15.401 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:15.599  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:15.600  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:15.941  1256  1256 I Sensors : batch(19) - light_cct_sensor try to batching with 200000000
+04-17 11:09:15.944  1256  1256 I Sensors : LightCCT_Sensor old sensor_state 279041, new sensor_state : 283695475081729 en : 1
+04-17 11:09:15.950  1256  1256 I Sensors : enable:: light_cct_sensor(19)
+04-17 11:09:15.950  1670  2268 D SensorManager: registerListener :: 33, TMD4912 Light CCT, 200000, 0, com.samsung.android.displaysolution.EyeComfortSolutionService$2@d860f6
+04-17 11:09:15.984  1256  1995 I Sensors : lux = 84, CCT = 0, r = 2683, g = 565, b = 4589, c = 988, atime = 350, again = 512, lux_raw = 88, brightness = 134, time = 172782131700985
+04-17 11:09:15.989  1256  1256 I Sensors : LightCCT_Sensor old sensor_state 279041, new sensor_state : 283691180114433 en : 0
+04-17 11:09:15.993  1256  1256 I Sensors : disable:: light_cct_sensor(19)
+04-17 11:09:15.993  1670  2268 D SensorManager: unregisterListener :: com.samsung.android.displaysolution.EyeComfortSolutionService$2@d860f6
+04-17 11:09:16.026  1670  4087 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 10936, isSameBssidAndFreq true
+04-17 11:09:16.376   675   675 D io_stats: !@ Read_top(KB): binder:1234_4(1234) 52
+04-17 11:09:16.376   675   675 D io_stats: !@ Write_top(KB): kworker/u16:18(27220) 144
+04-17 11:09:16.644  1670  2042 D InputReader: Btn_touch(8): value=1 when=78176.884417
+04-17 11:09:16.645  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13676 ] when=78176.884417
+04-17 11:09:16.646  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:16.647  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:16.647 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:16.647  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=78176884
+04-17 11:09:16.648  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 921945674 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:16.648  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 921945674 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:16.649  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:16.649  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:16.661  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 975858668
+04-17 11:09:16.661  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 975858668
+04-17 11:09:16.693  1670  2042 D InputReader: Btn_touch(8): value=0 when=78176.934068
+04-17 11:09:16.693  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78176.934068
+04-17 11:09:16.693  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:16.694 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:16.696 31229 31229 D PhantomViewModel: Attempting to start proxy with args: [-server 192.168.1.224:19132]
+04-17 11:09:16.696 31229 31229 D PhantomViewModel: UI LOG: Attempting to start proxy...
+04-17 11:09:16.696 31229 31229 D PhantomViewModel: UI LOG: Arguments: -server 192.168.1.224:19132
+04-17 11:09:16.697  1670  1701 I ActivityManager: Background started FGS: Allowed [callingPackage: com.ismailjamal.bedrockrelay; callingUid: 10387; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.ismailjamal.bedrockrelay/.PhantomService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:12; bindFromPackage:null: isBindService:false]
+04-17 11:09:16.699 31229 31229 D PhantomViewModel: UI LOG: Proxy start command sent successfully.
+04-17 11:09:16.706 31229 31229 D PhantomService: Service onStartCommand received - Action: null
+04-17 11:09:16.709  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:true]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:16.711  1670  1784 E NotificationService: isPkgBlocked = true
+04-17 11:09:16.711  1670  1784 E NotificationService: isRecordBlocked = false
+04-17 11:09:16.711  1670  1784 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:16.712  2428 27011 D SecFgsManagerController: updateUiControl[com.ismailjamal.bedrockrelay]: -1
+04-17 11:09:16.712  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 2
+04-17 11:09:16.715 31229 31229 I PhantomService: Processing START command.
+04-17 11:09:16.715 31229 31229 D PhantomService: SERVICE LOG: Received start request:
+04-17 11:09:16.716 31229 31229 D PhantomService: SERVICE LOG:   Args: [-server 192.168.1.224:19132]
+04-17 11:09:16.717 31229 31287 D PhantomRepository: Entering getBinaryFile
+04-17 11:09:16.717 31229 31287 D PhantomRepository: Checking for binary at: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:16.717 31229 31287 E PhantomRepository: Binary libphantom.so not found at expected location: /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:16.717 31229 31287 D PhantomRepository: --- Directory Tree Dump ---
+04-17 11:09:16.717 31229 31287 D PhantomRepository: Attempting to log native library directory structure:
+04-17 11:09:16.717 31229 31287 D PhantomRepository: nativeLibDir: arm64/
+04-17 11:09:16.717 31229 31287 D PhantomRepository: nativeLibDir:   [Directory is empty]
+04-17 11:09:16.717 31229 31287 D PhantomRepository: Parent directory structure:
+04-17 11:09:16.717 31229 31287 D PhantomRepository: baseLibDir: lib/
+04-17 11:09:16.718 31229 31287 D PhantomRepository: baseLibDir: └── arm64/
+04-17 11:09:16.718 31229 31287 D PhantomRepository: baseLibDir:     arm64/
+04-17 11:09:16.718 31229 31287 D PhantomRepository: baseLibDir:       [Directory is empty]
+04-17 11:09:16.718 31229 31287 D PhantomRepository: --- End Directory Tree Dump ---
+04-17 11:09:16.718 31229 31287 E PhantomService: Failed to get binary file from repository
+04-17 11:09:16.718 31229 31287 E PhantomService: java.lang.RuntimeException: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomRepository.getBinaryFile-d1pmJ48(PhantomRepository.kt:100)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at com.ismailjamal.bedrockrelay.PhantomService$startProcess$1.invokeSuspend(PhantomService.kt:177)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+04-17 11:09:16.718 31229 31287 E PhantomService: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+04-17 11:09:16.718 31229 31287 D PhantomService: SERVICE LOG: Error: Failed to get binary file: Binary libphantom.so not found at /data/app/~~K4yIlBSfSpa1K80wfbb9xg==/com.ismailjamal.bedrockrelay-a0SwdV5l3pCzATTHi0Z5LQ==/lib/arm64/libphantom.so
+04-17 11:09:16.719 31229 31287 I PhantomService: Stopping process and service.
+04-17 11:09:16.720 31229 31288 D PhantomService: Stop command issued, but process was not running.
+04-17 11:09:16.722 31229 31229 I NotificationManager: com.ismailjamal.bedrockrelay: notify(1, null, Notification(channel=phantom_service_channel shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+04-17 11:09:16.723  2428 27011 D SecFgsManagerController: onForegroundStateChanged: [dialog:false]:[isForeground:false]:[packageName:com.ismailjamal.bedrockrelay]:[token:android.os.BinderProxy@cbf132d]:[userId:0]
+04-17 11:09:16.724  2428 27011 D SecFgsManagerController: updateNumberOfVisibleRunningPackagesLocked: 1
+04-17 11:09:16.727 31229 31287 D PhantomService: Process coroutine finished.
+04-17 11:09:16.728  1670  1701 E NotificationService: isPkgBlocked = true
+04-17 11:09:16.728  1670  1701 E NotificationService: isRecordBlocked = false
+04-17 11:09:16.728  1670  1701 E NotificationService: Suppressing notification from package com.ismailjamal.bedrockrelay by user request.
+04-17 11:09:16.728 31229 31229 D PhantomService: Notification updated: Proxy running...
+04-17 11:09:16.760  2840  3426 D ScanFilter: manu data matches
+04-17 11:09:16.760  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-65, periodicAdvInt=0x0
+04-17 11:09:16.761  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-17 11:09:16.948  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:16.948  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:17.170  1336  1513 I EDEN    : [Exynos][EDEN][v1.6.23][SERVICE] processAliveMointorMain:253: Try to check pid=(1282)...
+04-17 11:09:17.388  1670  2042 D InputReader: Btn_touch(8): value=1 when=78177.628311
+04-17 11:09:17.389  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13677 ] when=78177.628311
+04-17 11:09:17.390  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:17.390  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:17.391  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:17.391  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:17.392  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 724905826 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:17.393  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 724905826 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:17.393 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:17.404  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 147250748
+04-17 11:09:17.404  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 147250748
+04-17 11:09:17.452  1670  2042 D InputReader: Btn_touch(8): value=0 when=78177.693387
+04-17 11:09:17.452  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78177.693387
+04-17 11:09:17.453  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:17.453 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:17.693  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:17.693  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:18.377   675   675 D io_stats: !@   8,0 r 7285118 181137808 w 2724626 36516204 d 795539 39395012 f 0 0 iot 4107288 0 th 0 0 0 pt 0 inp 0 0 78178.618
+04-17 11:09:18.633  2840  3426 D ScanFilter: manu data matches
+04-17 11:09:18.633  2840  3426 D BtGatt.GattService: onScanResult to scannerId: 2- eventType=0x10, addressType=0, address=XX:XX:XX:XX:C4:4B, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-62, periodicAdvInt=0x0
+04-17 11:09:18.646  7147 10900 I [+0100]oneconnect[1.8.21.28_01][CORE]: BleParserForVD.parseTvPacket - |name:($)-[(15)|deviceType:TV|discoverType:_BLE|services:None|connected:false[TvStatusString]POWER_OFF[TvStatus]-128[TvService]102[TvMirrorChannel]1[TvRegisteredDB][114, -99, 0, 0, 0, 0][TvYear]2016[TvOcfInfo]0[TvAcmStatus]0[ExTvStatus]0[ExtendedStatus]-1[ModuloSn]-1
+04-17 11:09:18.772  1670  3335 D FreecessController: com.ismailjamal.bedrockrelay(10387) is important[12]
+04-17 11:09:19.129  1670  4087 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 10937, isSameBssidAndFreq true
+04-17 11:09:19.146  1670  3335 D FreecessController: com.sec.android.app.shealth(10318) is important[fg-service]
+04-17 11:09:19.155  1670  2042 D InputReader: Btn_touch(8): value=1 when=78179.395110
+04-17 11:09:19.155  1670  2042 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.13678 ] when=78179.395110
+04-17 11:09:19.156  1670  2041 I InputDispatcher: Delivering touch to (2428): action: 0x4, f=0x0, d=0, '7538e8e', t=1 
+04-17 11:09:19.156  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x0, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:19.157  1670  2041 D PowerManagerService: [api] userActivityFromNative : touch displayId=0 eventTime=78179395
+04-17 11:09:19.157  2428  2428 D Navbar.Store: --------NavBarStates(0) getSpaceWidth(land: false): 118
+04-17 11:09:19.157  2428  2428 D SearcleGestureHandler: allowGesture: false
+04-17 11:09:19.157 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 0
+04-17 11:09:19.158  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 1069399323 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:204 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:19.158  1670  1771 I GestureDetector: obtain mCurrentDownEvent. id: 1069399323 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:337 
+04-17 11:09:19.188  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 293916311
+04-17 11:09:19.189  1670  1771 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 293916311
+04-17 11:09:19.262  1670  2042 D InputReader: Btn_touch(8): value=0 when=78179.503305
+04-17 11:09:19.263  1670  2042 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=78179.503305
+04-17 11:09:19.263  1670  2041 I InputDispatcher: Delivering touch to (31229): action: 0x1, f=0x0, d=0, '7cccf1f', t=1 
+04-17 11:09:19.263 31229 31229 I ViewRootImpl@cd32dfb[MainActivity]: ViewPostIme pointer 1
+04-17 11:09:19.458  1670  1771 I GestureDetector: handleMessage TAP
+04-17 11:09:19.459  1670  1670 I GestureDetector: handleMessage TAP
+04-17 11:09:19.661  1670  1701 W ProcessStats: Tracking association SourceState{90a3538 com.samsung.android.spay/10327 ImpBg #306679} whose proc state 6 is better than process ProcessState{fad440f com.samsung.android.samsungpay.gear/10300 pkg=com.samsung.android.samsungpay.gear} proc state 8 (12 skipped)
+04-17 11:09:19.704  1670  1694 W System  : A resource failed to call close. 
+04-17 11:09:19.705  1670  1694 W System  : A resource failed to call close. 
+04-17 11:09:19.705  1670  1694 W System  : A resource failed to call close. 
+04-17 11:09:19.705  1670  1694 W System  : A resource failed to call close. 

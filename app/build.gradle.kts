@@ -11,14 +11,14 @@ android {
     defaultConfig {
         applicationId = "com.ismailjamal.bedrockrelay"
         minSdk = 28
-        targetSdk = 35
+        targetSdk = 29
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         
         ndk {
-            abiFilters += listOf("armeabi-v7a", "arm64-v8a")
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
         }
     }
 
@@ -41,9 +41,11 @@ android {
     buildFeatures {
         compose = true
     }
-    
-    aaptOptions {
-        noCompress += "phantom"
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
     }
 
     sourceSets {
