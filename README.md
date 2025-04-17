@@ -8,7 +8,8 @@ An Android application that serves as a wrapper for `jhead/phantom`. It allows y
 *   Runs phantom as a foreground service to ensure it keeps running in the background.
 *   Displays logs from the running phantom process within the app.
 *   Handles necessary permissions and manages the phantom binary lifecycle.
-*   Auto Dark/light Theme
+*   Auto Dark/light Theme.
+*   Works for Bedrock Release AND Preview (Beta) editions.
 
 ## How-To
 
