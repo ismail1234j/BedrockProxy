@@ -49,7 +49,7 @@ class PhantomService : Service() {
     val logFlow: SharedFlow<String> = _logFlow.asSharedFlow()
 
     private val TAG = "PhantomService"
-    private val BINARY_NAME = "phantom" // Define the expected binary name here
+    private val BINARY_NAME = "libphantom.so" // Define the expected binary name here
 
     inner class LocalBinder : Binder() {
         fun getService(): PhantomService = this@PhantomService

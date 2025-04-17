@@ -60,24 +60,30 @@ class PhantomRepository private constructor(private val context: Context) {
     fun getBinaryFile(): Result<File> {
         Log.d(TAG, "Entering getBinaryFile")
 
-        val nativeLibDir = context.applicationInfo.nativeLibraryDir // e.g. '/data/app/.../lib/arm64'
-        val soFile = File(nativeLibDir, "libphantom.so")
+        // Search for libphantom.so in all possible ABI directories under native library root
+        val nativeLibDir = File(context.applicationInfo.nativeLibraryDir)
+        val baseLibDir = nativeLibDir.parentFile ?: nativeLibDir
+        val abiList = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) Build.SUPPORTED_ABIS.toList() else listOf(Build.CPU_ABI)
 
-        if (!soFile.exists()) {
-            Log.e(TAG, "Binary file does not exist at: ${soFile.absolutePath}")
-            return Result.failure(RuntimeException("Binary file is missing: ${soFile.absolutePath}"))
+        val candidates = mutableListOf<File>().apply {
+            add(File(nativeLibDir, "libphantom.so"))
+            abiList.forEach { abi -> add(File(baseLibDir, "$abi/libphantom.so")) }
         }
 
+        val soFile = candidates.firstOrNull { it.exists() } ?: return Result.failure(
+            RuntimeException("Binary libphantom.so not found in any: ${candidates.map { it.absolutePath }}")
+        )
+
         if (!soFile.canExecute()) {
-            Log.w(TAG, "libphantom.so not executable, attempting chmod 755")
+            Log.w(TAG, "libphantom.so not executable, chmod 755")
             try {
                 Runtime.getRuntime().exec(arrayOf("chmod", "755", soFile.absolutePath)).waitFor()
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to chmod libphantom.so", e)
             }
-            if (!soFile.canExecute()) {
-                return Result.failure(RuntimeException("Failed to set executable permission on libphantom.so"))
-            }
+            if (!soFile.canExecute()) return Result.failure(
+                RuntimeException("Failed to set executable permission on ${soFile.absolutePath}")
+            )
         }
 
         Log.i(TAG, "Binary file is ready to execute: ${soFile.absolutePath}")

@@ -120,7 +120,7 @@ fun SimplifiedPhantomApp(
             value = phantomArguments,
             onValueChange = { phantomArguments = it },
             label = { Text("Phantom Arguments (e.g., -server ip:port)") },
-            placeholder = { Text("-server example.com:19132 -debug")},
+            placeholder = { Text("-server example.com:19132")},
             modifier = Modifier.fillMaxWidth(),
             maxLines = 3
         )

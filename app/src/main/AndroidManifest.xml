@@ -20,7 +20,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BedrockRelay"
-        tools:targetApi="31">
+        tools:targetApi="29">
 
         <activity
             android:name=".MainActivity"
