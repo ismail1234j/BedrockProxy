@@ -1,6 +1,6 @@
-# Bedrock Relay V2 (Phantom Android Wrapper)
+# Bedrock Relay
 
-This is an Android application that serves as a wrapper for the `jhead/phantom` proxy. It allows you to run and manage the phantom proxy service directly on your Android device.
+An Android application that serves as a wrapper for `jhead/phantom`. It allows you to have your consoles join a server through LAN Games.
 
 ## Features
 
@@ -9,27 +9,28 @@ This is an Android application that serves as a wrapper for the `jhead/phantom` 
 *   Displays logs from the running phantom process within the app.
 *   Handles necessary permissions and manages the phantom binary lifecycle.
 
-## Purpose
-
-This application wraps the `phantom` executable, which acts as a proxy, likely intended for use with Minecraft Bedrock Edition servers, allowing connections or modifications based on phantom's capabilities.
-
 ## Usage
 
-1.  Build and install the application on your Android device.
-2.  Launch the app.
-3.  Enter any required command-line arguments for phantom in the input field.
-4.  Tap the "Start" button to initiate the proxy service.
-5.  Tap the "Stop" button to terminate the service.
-6.  Logs from the phantom process will be displayed in the text area.
+1.  Download the latest build from [here](https://github.com/ismail1234j/bedrockproxyv2/releases)  or you can build yourself by following [this](#building).
+
+2.  Install the app to your phone.
+
+3. Now you can use the Phantom app as you would on a desktop computer. Here is an example command to enter into the app: `-server lax.mcbr.cubed.host:19132`. If you need help with the arguments to enter see the [Phantom Repository here.](https://github.com/jhead/phantom?tab=readme-ov-file#usage)
 
 ## Building
 
-This is a standard Android project using Gradle. You can build it using Android Studio or via the command line:
+It's easiest to use the latest release but incase I haven't made one and there is a game breaking change follow this guide:
 
-```bash
-./gradlew assembleDebug
-# or
-./gradlew assembleRelease
-```
+1. You need to download the latest Phantom Binary from jhead's repo. [Here](https://github.com/jhead/phantom/releases).
+    
+2. Make sure its the `phantom-linux-arm8` and the `phantom-linux-arm7` that you are downloading.
+    
+3.  Then from the root directory of this project go to `app/src/main/jniLibs` folder (the jniLibs folder may or may not be there so you might have to create it).
 
-Ensure you have the necessary Android SDK components installed. The phantom binary (`libphantom.so`) should be placed in the appropriate `jniLibs` folder (`app/src/main/jniLibs/<abi>/`) for the target architecture(s).
+4. Now you create two folder, `arm64-v8a` and `armeabi-v8a`.
+    
+5. The `phantom-linux-arm8` file from earlier needs to go into `arm64-v8a` and the `phantom-linux-arm7` file needs to go into `armeabi-v8a`. 
+    
+6. Once done you need to rename both binaries into `libphantom.so`.
+    
+7. Then you can build with [Android Studio](https://developer.android.com/studio) or with this command: `./gradlew assembleDebug`.
