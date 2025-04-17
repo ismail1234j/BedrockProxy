@@ -1,4 +1,4 @@
-# Bedrock Relay
+# Bedrock Proxy
 
 An Android application that serves as a wrapper for `jhead/phantom`. It allows you to have your consoles join a server through LAN Games.
 
