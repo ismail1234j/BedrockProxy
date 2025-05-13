@@ -1,5 +1,7 @@
 # Bedrock Proxy
 
+## It's probably better to use a DNS method for consoles as this app has issues with battery management on certain devices.
+
 An Android application that serves as a wrapper for `jhead/phantom`. It allows you to have your consoles join a server through LAN Games.
 
 ## Features
